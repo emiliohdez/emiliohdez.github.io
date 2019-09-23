@@ -5,6 +5,10 @@
 	<title>Notas de Latex | Emilio Hdez</title>
 
 	<style type="text/css">
+		.highlight{
+			color: gray;
+		}
+
 		code{
 			font-family: Consolas, "Liberation Monoy", Courier, monospace;
 		}
@@ -16,17 +20,70 @@
 		.latex-code .open-key, .latex-code .close-key{
 			color: #b58900;
 		}
+
+		.latex-code .line-key{
+			color: #6c71c4;
+		}
+
+		.line-key > .settings{
+			color: #268bd2;
+		}
+
+		.line-key > .params{
+			color: pink;
+		}
 	</style>
 </head>
 <body>
 
 
-	<code class="latex-code">
-		<span class="comment">% este es un comentario para latex</span>
-		<span class="open-key">\begin{document}</span>
+	<div class="highlight">
+		<code class="latex-code">
 
-		<span class="open-key">\close{document}</span>
+		<span class="comment">% Inicio de nuestro documento.</span>
+		<br>
+
+		<span class="line-key">\documentclass<span class="settings">[12pt,letterpaper,oneside]</span><span class="params">{book}</span></span>
+		<br><br>
+
+		<span class="comment">% Uso de caracteres especiales</span>
+		<br>
+
+		<span class="line-key">\usepackage<span class="settings">[utf8]</span><span class="params">{inputenc}</span></span>
+		<br><br>
+
+		<span class="comment">% Especificamos metadatos como el título y el autor del documento</span>
+		<br>
+
+		<span class="line-key">\title<span class="params">{Notas sobre <span class="line-key">\LaTeX</span>}</span></span>
+		<br>
+
+		<span class="line-key">\author<span class="params">{Emilio-Ernesto Hernández-Huerfano}</span></span>
+		<br><br>
+
+		<span class="open-key">\begin{document}</span>
+		<br><br>
+
+		<span class="comment">% Genera una portada básica que contiene los metadatos especificados</span>
+		<br>
+		<span class="line-key">\maketitle</span>
+		<br>
+
+		<span class="comment">% Especificamos el nombre del primer capítulo</span>
+		<br>
+		<span class="line-key">\chapter<span class="params">{Veamos si funciona <span class="line-key">\LaTeX</span>}</span></span>
+		<br>
+		<span class="line-key">\section<span class="params">{Probando el procesamiento del texto}</span></span>
+		<br>
+
+		<span class="line-key">\noindent</span> El objetivo de este documento es verificar que el procesador de documentos lo está tomando de manera correcta. Es importante observar si los caracteres especiales de nuestro idioma son procesados correctamente: á é í ó ú  niño güero.
+		<br>
+
+		<br>
+		<span class="open-key">\end{document}</span>
+		
 	</code>
+	</div>
 
 </body>
 </html>
