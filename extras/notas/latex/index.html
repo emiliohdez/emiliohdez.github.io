@@ -1,126 +1,312 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8"/>
-	<title>Notas de Latex | Emilio Hdez</title>
+    <meta charset="utf-8" />
+    <title>Notas de Latex | Emilio Hdez</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../../../css/stars.css" />
+    <style type="text/css">
+    body {
+        color: #333;
+        font-family: Century Gothic, sans-serif;
+        background-image: url("https://image.freepik.com/free-vector/binary-code-background-blue-vector_88211-920.jpg");
+        /*background-size: cover;*/
+        background-position: center center;
+        background-attachment: fixed;
+    }
 
-	<link rel="stylesheet" type="text/css" href="../../../css/reset.css"/>
+    main {
+    	padding: 25px;
+        width: 70%;
+        margin: auto;
+        overflow: auto;
+        background-color: white;
+    }
 
-	<style type="text/css">
-		body{
-			color: #333;
-			font-family: Century Gothic, sans-serif;
-		}
-		.highlight{
-			color: #333;
-			margin: 15px 25px;
-		}
+    .highlight {
+        color: #555;
+        margin: 30px 35px;
+    }
 
-		code{
-			font-family: Consolas, "Liberation Monoy", Courier, monospace;
-		}
+    code, .inline-code {
+        font-family: Consolas, "Liberation Monoy", Courier, monospace;
+    }
 
-		.latex-code .comment{
-			color: #657b83;
-		}
+    .inline-code{
+    	color: #5d79bb;
+    }
 
-		.latex-code .open-key, .latex-code .close-key{
-			color: #b58900;
-		}
+    .latex-code .comment {
+        color: #a6bbc4;
+    }
 
-		.latex-code .line-key{
-			color: #6c71c4;
-		}
+    .latex-code .open-key,
+    .latex-code .close-key {
+        color: #b58900;
+    }
 
-		.line-key > .settings{
-			color: #268bd2;
-		}
+    .latex-code .line-key {
+        color: #6c71c4;
+    }
 
-		.line-key > .params{
-			color: pink;
-		}
+    .line-key>.settings {
+        color: #268bd2;
+    }
 
-		table, th, td {
-  border: 1px solid black;
+    .line-key>.params {
+        color: pink;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid rgb(221, 221, 221);
+        ;
+    }
+
+    table{
+    	margin: 25px auto;
+  border-collapse: collapse;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #217eda;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    table th {
+  background: #217eda;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
 }
-	</style>
+
+    td, th{
+    	padding: .7rem 0.5rem;
+
+    }
+
+    table tr:hover {
+  background: #f4f4f4;
+}
+table tr:hover td {
+  color: #555;
+}
+
+
+    ul {
+		list-style-type: circle;
+		list-style-position: outside;
+		list-style-image: none;
+		width: 90%;
+		margin-left:15px; 
+	}
+	p, li{
+		color: #2e2f3e;
+		line-height: 1.45;
+		font-size: 17px;
+		text-rendering: optimizeLegibility;
+	}
+	h1 { 
+		color: #303030;
+		font-family: 'Lato', sans-serif;
+		font-size: 50px;
+		font-weight: 300;
+		line-height: 50px;
+		margin: 0 0 30px;
+	}
+
+	span.important-word{
+		background: -webkit-gradient(linear,left top,right top,from(#1960be),to(#00c8ff));
+background: linear-gradient(to right, #1960be, #00c8ff);
+    background-clip: border-box;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-box-decoration-break: clone;
+	}
+
+    </style>
 </head>
+
 <body>
+    <main>
+        <h1>Creación de Documentos Científicos</h1>
+        <p>Al igual que con Microsoft Word, con <span class="important-word">LaTeX</span> es posible crear cualquier tipo de documento, sin embargo su enfoque va orientado a la creación de documentación técnica como Reportes científicos, Trabajos de Tesis, Artículos, etc...</p>
+        <div class="highlight">
+            <code class="latex-code">
+                <span class="comment">% Inicio de nuestro documento.</span>
+                <br>
+                <span class="line-key">\documentclass<span class="settings">[12pt,letterpaper,oneside]</span><span class="params">{book}</span></span>
+                <br><br>
+                <span class="comment">% Uso de caracteres especiales</span>
+                <br>
+                <span class="line-key">\usepackage<span class="settings">[utf8]</span><span class="params">{inputenc}</span></span>
+                <br><br>
+                <span class="comment">% Especificamos metadatos como el título y el autor del documento</span>
+                <br>
+                <span class="line-key">\title<span class="params">{Notas sobre <span class="line-key">\LaTeX</span>}</span></span>
+                <br>
+                <span class="line-key">\author<span class="params">{Emilio-Ernesto Hernández-Huerfano}</span></span>
+                <br><br>
+                <span class="open-key">\begin{document}</span>
+                <br><br>
+                <span class="comment">% Portada básica</span>
+                <br>
+                <span class="line-key">\maketitle</span>
+                <br>
+                <span class="comment">% Primer capítulo</span>
+                <br>
+                <span class="line-key">\chapter<span class="params">{Veamos si funciona <span class="line-key">\LaTeX</span>}</span></span>
+                <br>
+                <span class="line-key">\section<span class="params">{Probando el procesamiento del texto}</span></span>
+                <br>
+                <span class="line-key">\noindent</span> El objetivo de este documento es verificar que el procesador de documentos lo está tomando de manera correcta. Es importante observar si los caracteres especiales de nuestro idioma son procesados correctamente: á é í ó ú niño güero.
+                <br>
+                <br>
+                <span class="open-key">\end{document}</span>
+            </code>
+        </div>
 
-<h1>Creación de Documentos Científicos</h1>
+        <p>La estructura de un documento está dividida en dos grupos</p><br>
+        <ul>
+        	<li>El grupo de instrucciónes que conforman el <span class="important-word">preámbulo</span> del documento, es decir, aquellas instrucciones que son parte de la configuración: Tipo de documento, tipo de hoja, márgenes, colores, cabeceras y paquetes necesarios, entre otros. Estas se encuentran antes de la instrucción <span class="inline-code">\begin{document}</span>.</li>
+        	<li>El grupo de instrucciones que detallan el <span class="important-word">cuerpo</span> del documento o contenido textual y formato: Títulos, párrafos, imágenes, tablas, fórmulas, etc. Estas se encuentran entre las instrucciones <span class="inline-code">\begin{document}</span> y <span class="inline-code">\end{document}</span>.</li>
+        </ul>
 
-<p>Es posible crear cualquier tipo de documento, sin embargo su efoque va orientado a la creación de documentación técnica como Reportes, Trabajos de Tesis, Artículos, etc...</p>
+        <br>
 
-	<div class="highlight">
-		<code class="latex-code">
+        <p>La siguiente tabla muestra las opciones que se pueden utilizar para especificar el tipo de documento a generar (instrucción <span class="inline-code">\documentclass[...]{book}</span>). Es importante notar que estas trabajan solo para el tipo de documento <span class="inline-code">book</span>, posteriormente se tocarán otros tipos de documentos como <span class="inline-code">article</span> y <span class="inline-code">report</span>.</p>
+        <div class="highlight">
+            <table>
+                <tr>
+                    <th>Opción</th>
+                    <th>Predeterminada</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr class="opt1">
+                    <td>10pt</td>
+                    <td style="text-align: center;">x</td>
+                    <td rowspan="3">Especifica el tamaño del texto para el documento en general.</td>
+                </tr>
+                <tr class="opt1">
+                    <td>11pt</td>
+                    <td></td>
+                </tr>
+                <tr class="opt1">
+                    <td>12pt</td>
+                    <td></td>
+                </tr>
+                <tr class="opt2">
+                    <td>letterpaper</td>
+                    <td style="text-align: center;">x</td>
+                    <td rowspan="6">Especifica el tipo de hoja (métricas) a utilizar en la impresión.</td>
+                </tr>
+                <tr class="opt2">
+                    <td>legalpaper</td>
+                    <td></td>
+                </tr>
+                <tr class="opt2">
+                    <td>executivepaper</td>
+                    <td></td>
+                </tr>
+                <tr class="opt2">
+                    <td>a4paper</td>
+                    <td></td>
+                </tr>
+                <tr class="opt2">
+                    <td>a5paper</td>
+                    <td></td>
+                </tr>
+                <tr class="opt2">
+                    <td>b5paper</td>
+                    <td></td>
+                </tr>
+                <tr class="opt3">
+                    <td>final</td>
+                    <td style="text-align: center;">x</td>
+                    <td rowspan="2">Indica si la versión del documento que se está construyendo debe verse en un formato bien definido o con líneas de plantilla.</td>
+                </tr>
+                <tr class="opt3">
+                    <td>draft</td>
+                    <td></td>
+                </tr>
+                <tr class="opt4">
+                    <td>oneside</td>
+                    <td></td>
+                    <td rowspan="2">Especifica si el documento tendrá un formato de márgenes de un documento visto a dos páginas o a una.</td>
+                </tr>
+                <tr class="opt4">
+                    <td>twoside</td>
+                    <td>x</td>
+                </tr>
+                <tr class="opt5">
+                    <td>onecolumn</td>
+                    <td>x</td>
+                    <td rowspan="2">El texto se organizará en una columna o en dos.</td>
+                </tr>
+                <tr class="opt5">
+                    <td>twocolumn</td>
+                    <td></td>
+                </tr>
+                <tr class="opt6">
+                    <td>openright</td>
+                    <td>x</td>
+                    <td rowspan="2">Especifica si el documento tendrá un formato de márgenes de un documento visto a dos páginas o a una.</td>
+                </tr>
+                <tr class="opt6">
+                    <td>openany</td>
+                    <td></td>
+                </tr>
+                <tr class="opt7">
+                    <td>notitlepage</td>
+                    <td></td>
+                    <td rowspan="2">Especifica si el documento tendrá un formato de márgenes de un documento visto a dos páginas o a una.</td>
+                </tr>
+                <tr class="opt7">
+                    <td>titlepage</td>
+                    <td>x</td>
+                </tr>
+            </table>
+        </div>
 
-			<span class="comment">% Inicio de nuestro documento.</span>
-			<br>
-
-			<span class="line-key">\documentclass<span class="settings">[12pt,letterpaper,oneside]</span><span class="params">{book}</span></span>
-			<br><br>
-
-			<span class="comment">% Uso de caracteres especiales</span>
-			<br>
-
-			<span class="line-key">\usepackage<span class="settings">[utf8]</span><span class="params">{inputenc}</span></span>
-			<br><br>
-
-			<span class="comment">% Especificamos metadatos como el título y el autor del documento</span>
-			<br>
-
-			<span class="line-key">\title<span class="params">{Notas sobre <span class="line-key">\LaTeX</span>}</span></span>
-			<br>
-
-			<span class="line-key">\author<span class="params">{Emilio-Ernesto Hernández-Huerfano}</span></span>
-			<br><br>
-
-			<span class="open-key">\begin{document}</span>
-			<br><br>
-
-			<span class="comment">% Portada básica</span>
-			<br>
-			<span class="line-key">\maketitle</span>
-			<br>
-
-			<span class="comment">% Primer capítulo</span>
-			<br>
-			<span class="line-key">\chapter<span class="params">{Veamos si funciona <span class="line-key">\LaTeX</span>}</span></span>
-			<br>
-			<span class="line-key">\section<span class="params">{Probando el procesamiento del texto}</span></span>
-			<br>
-
-			<span class="line-key">\noindent</span> El objetivo de este documento es verificar que el procesador de documentos lo está tomando de manera correcta. Es importante observar si los caracteres especiales de nuestro idioma son procesados correctamente: á é í ó ú  niño güero.
-			<br>
-
-			<br>
-			<span class="open-key">\end{document}</span>
-			
-		</code>
-	</div>
-
-	<div class="highlight">
-		<table>
-			<tr>
-				<th>Opción</th>
-				<th>Predeterminada</th>
-				<th>Descripción</th>
-			</tr>
-			<tr>
-				<td>10pt</td>
-				<td>x</td>
-				<td rowspan="3">Especifica el tamaño del texto para el documento en general.</td>
-			</tr>
-			<tr>
-				<td>11pt</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>12pt</td>
-				<td></td>
-			</tr>
-		</table>
-	</div>
-
+        <p>En cuanto al cuerpo o contenido del documento, éste usualmente se jerarquiza de acuerdo a las estructuras de la siguiente tabla. </p>
+        <div class="highlight">
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Comando</th>
+                </tr>
+                <tr class="opt1">
+                    <td>Parte</td>
+                    <td>\part{...}</td>
+                </tr>
+                <tr class="2">
+                    <td>Capítulo</td>
+                    <td>\chapter{...}</td>
+                </tr>
+                <tr class="opt3">
+                    <td>Sección</td>
+                    <td>\section{...}</td>
+                </tr>
+                <tr class="opt4">
+                    <td>Subsección</td>
+                    <td>\subsection{...}</td>
+                </tr>
+                <tr class="opt5">
+                    <td>Subsubsección</td>
+                    <td>\subsubsection{...}</td>
+                </tr>
+                <tr class="opt6">
+                    <td>Párrafo</td>
+                    <td>\paragraph{...}</td>
+                </tr>
+                <tr class="opt7">
+                    <td>Subpárrafo</td>
+                    <td>\subparagraph{...}</td>
+                </tr>
+            </table>
+        </div>
+    </main>
 </body>
+
 </html>
