@@ -1,0 +1,159 @@
+body {
+    color: #333;
+    font-family: Century Gothic, sans-serif;
+    background-image: url("https://image.freepik.com/free-vector/binary-code-background-blue-vector_88211-920.jpg");
+    /*background-size: cover;*/
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+main {
+    padding: 25px;
+    width: 70%;
+    margin: auto;
+    overflow: auto;
+    background-color: white;
+}
+
+
+/* Título prinicpal de la página */
+h1 {
+    color: #303030;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 50px;
+    margin: 0 0 30px;
+}
+
+.subtitle{
+    color: #303030;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 50px;
+    margin: 10px 0 20px;
+}
+
+.highlight {
+    color: #555;
+    margin: 30px 35px;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+em {
+    font-style: italic;
+}
+
+a.important-link{
+    color: #303030;
+    text-decoration: none;
+    display: block;
+    margin: 25px auto;
+    padding: 15px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #217eda;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Degradado para resaltar palabras importantes */
+span.important-word {
+    background: -webkit-gradient(linear, left top, right top, from(#1960be), to(#00c8ff));
+    background: linear-gradient(to right, #1960be, #00c8ff);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+}
+
+
+/* * * * * * * * * * * * * * * Estilos para listas * * * * * * * * * * * * * */
+
+ul {
+    list-style-type: circle;
+    list-style-position: outside;
+    list-style-image: none;
+    width: 90%;
+    margin-left: 15px;
+}
+
+p,
+li {
+    color: #2e2f3e;
+    line-height: 1.45;
+    font-size: 17px;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+/* * * * * * * * * * * * * * * Estilos para tablas * * * * * * * * * * * * * */
+
+table,
+th,
+td {
+    border: 1px solid rgb(221, 221, 221);
+}
+
+table {
+    margin: 25px auto;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #217eda;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+
+table th {
+    background: #217eda;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+}
+
+td,
+th {
+    padding: .7rem 0.5rem;
+}
+
+table tr:hover {
+    background: #f4f4f4;
+}
+
+table tr:hover td {
+    color: #555;
+}
+
+
+/* * * * * * * * * * * * * * * Estilos para códigos * * * * * * * * * * * * * */
+.code-box{
+    margin: 25px auto;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #217eda;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+
+.code-box > .header > *{
+    display: inline-block;
+    color: white;
+}
+
+.code-box > .header{
+    background: #217eda;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: .7rem 0.5rem;
+    line-height: 2em;
+}
+.code-box > .header > a{
+    font-size: 1.5em;
+    font-style: bold;
+    float: right;
+    margin: 0 15px;
+}

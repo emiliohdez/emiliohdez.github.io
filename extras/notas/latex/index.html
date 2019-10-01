@@ -6,126 +6,9 @@
     <title>Notas de Latex | Emilio Hdez</title>
     <link rel="stylesheet" type="text/css" href="../../../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../../../css/stars.css" />
-    <style type="text/css">
-    body {
-        color: #333;
-        font-family: Century Gothic, sans-serif;
-        background-image: url("https://image.freepik.com/free-vector/binary-code-background-blue-vector_88211-920.jpg");
-        /*background-size: cover;*/
-        background-position: center center;
-        background-attachment: fixed;
-    }
-
-    main {
-    	padding: 25px;
-        width: 70%;
-        margin: auto;
-        overflow: auto;
-        background-color: white;
-    }
-
-    .highlight {
-        color: #555;
-        margin: 30px 35px;
-    }
-
-    code, .inline-code {
-        font-family: Consolas, "Liberation Monoy", Courier, monospace;
-    }
-
-    .inline-code{
-    	color: #5d79bb;
-    }
-
-    .latex-code .comment {
-        color: #a6bbc4;
-    }
-
-    .latex-code .open-key,
-    .latex-code .close-key {
-        color: #b58900;
-    }
-
-    .latex-code .line-key {
-        color: #6c71c4;
-    }
-
-    .line-key>.settings {
-        color: #268bd2;
-    }
-
-    .line-key>.params {
-        color: pink;
-    }
-
-    table,
-    th,
-    td {
-        border: 1px solid rgb(221, 221, 221);
-        ;
-    }
-
-    table{
-    	margin: 25px auto;
-  border-collapse: collapse;
-  border: 1px solid #eee;
-  border-bottom: 2px solid #217eda;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
-    }
-
-    table th {
-  background: #217eda;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 12px;
-  text-align: center;
-}
-
-    td, th{
-    	padding: .7rem 0.5rem;
-
-    }
-
-    table tr:hover {
-  background: #f4f4f4;
-}
-table tr:hover td {
-  color: #555;
-}
-
-
-    ul {
-		list-style-type: circle;
-		list-style-position: outside;
-		list-style-image: none;
-		width: 90%;
-		margin-left:15px; 
-	}
-	p, li{
-		color: #2e2f3e;
-		line-height: 1.45;
-		font-size: 17px;
-		text-rendering: optimizeLegibility;
-	}
-	h1 { 
-		color: #303030;
-		font-family: 'Lato', sans-serif;
-		font-size: 50px;
-		font-weight: 300;
-		line-height: 50px;
-		margin: 0 0 30px;
-	}
-
-	span.important-word{
-		background: -webkit-gradient(linear,left top,right top,from(#1960be),to(#00c8ff));
-background: linear-gradient(to right, #1960be, #00c8ff);
-    background-clip: border-box;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
--webkit-box-decoration-break: clone;
-	}
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="../css/notes-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/latex-syntax-styles.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -166,15 +49,12 @@ background: linear-gradient(to right, #1960be, #00c8ff);
                 <span class="open-key">\end{document}</span>
             </code>
         </div>
-
         <p>La estructura de un documento está dividida en dos grupos</p><br>
         <ul>
-        	<li>El grupo de instrucciónes que conforman el <span class="important-word">preámbulo</span> del documento, es decir, aquellas instrucciones que son parte de la configuración: Tipo de documento, tipo de hoja, márgenes, colores, cabeceras y paquetes necesarios, entre otros. Estas se encuentran antes de la instrucción <span class="inline-code">\begin{document}</span>.</li>
-        	<li>El grupo de instrucciones que detallan el <span class="important-word">cuerpo</span> del documento o contenido textual y formato: Títulos, párrafos, imágenes, tablas, fórmulas, etc. Estas se encuentran entre las instrucciones <span class="inline-code">\begin{document}</span> y <span class="inline-code">\end{document}</span>.</li>
+            <li>El grupo de instrucciónes que conforman el <span class="important-word">preámbulo</span> del documento, es decir, aquellas instrucciones que son parte de la configuración: Tipo de documento, tipo de hoja, márgenes, colores, cabeceras y paquetes necesarios, entre otros. Estas se encuentran antes de la instrucción <span class="inline-code">\begin{document}</span>.</li>
+            <li>El grupo de instrucciones que detallan el <span class="important-word">cuerpo</span> del documento o contenido textual y formato: Títulos, párrafos, imágenes, tablas, fórmulas, etc. Estas se encuentran entre las instrucciones <span class="inline-code">\begin{document}</span> y <span class="inline-code">\end{document}</span>.</li>
         </ul>
-
         <br>
-
         <p>La siguiente tabla muestra las opciones que se pueden utilizar para especificar el tipo de documento a generar (instrucción <span class="inline-code">\documentclass[...]{book}</span>). Es importante notar que estas trabajan solo para el tipo de documento <span class="inline-code">book</span>, posteriormente se tocarán otros tipos de documentos como <span class="inline-code">article</span> y <span class="inline-code">report</span>.</p>
         <div class="highlight">
             <table>
@@ -268,10 +148,7 @@ background: linear-gradient(to right, #1960be, #00c8ff);
                 </tr>
             </table>
         </div>
-
-
-
-        <p>En cuanto al cuerpo o contenido del documento, éste usualmente se jerarquiza de acuerdo a las estructuras de la siguiente tabla. </p>
+        <p>En cuanto al cuerpo o contenido del documento, éste usualmente se jerarquiza de acuerdo a las estructuras de niveles de títulos, contenidas en la siguiente tabla: </p>
         <div class="highlight">
             <table>
                 <tr>
@@ -308,14 +185,166 @@ background: linear-gradient(to right, #1960be, #00c8ff);
                 </tr>
             </table>
         </div>
-
         <p>En LaTeX, las <span class="important-word">instrucciones</span> para el procesador de texto siempre inician con una diagonal invertida o backslash "\", para el compilador significa que a partir de ese caracter, viene una palabra que describe una acción. Existen 3 tipos principales de instrucciones:</p>
-
         <ul>
             <li>Comandos sin argumentos, como el caso de <span class="inline-code">\LaTeX</span>.</li>
             <li>Comandos con argumentos, como el caso de <span class="inline-code">\chapter{...}</span> o <span class="inline-code">\documentclass[...]{book}</span>.</li>
             <li>Comandos conocidos como "environments", que tienen una instrucción de apertura y de cierre, como <span class="inline-code">\begin{document}</span> y <span class="inline-code">\end{document}</span>.</li>
         </ul>
+        <br>
+        <h4 class="subtitle">Comandos para estilo textual</h4>
+        <p>Al redactar cualquier tipo de documento, no es extraño tener que utilizar ciertos estilos de texto que distingan visualmente frases citadas, palabras clave y contenido plano (por mencionar solo algunos), para ello empleamos tipografías en <strong>negritas</strong>, <em>cursivas</em> y texto normal principalmente, a continuación algunos comandos útiles para dar formato al contenido del documento:</p>
+        <br>
+        <div class="highlight">
+            <table>
+                <tr>
+                    <th>Estilo</th>
+                    <th>Comando</th>
+                </tr>
+                <tr class="opt1">
+                    <td>Cursiva</td>
+                    <td>\textit{...}</td>
+                </tr>
+                <tr class="opt2">
+                    <td>Inclinada</td>
+                    <td>\textsl{...}</td>
+                </tr>
+                <tr class="opt3">
+                    <td>Mayúsculas pequeñas</td>
+                    <td>\textsc{...}</td>
+                </tr>
+                <tr class="opt4">
+                    <td>Negritas</td>
+                    <td>\textbf{...}</td>
+                </tr>
+                <tr class="opt5">
+                    <td>Tipografía Roman</td>
+                    <td>\textrm{...}</td>
+                </tr>
+                <tr class="opt6">
+                    <td>Tipografía Sans Serif</td>
+                    <td>\textsf{...}</td>
+                </tr>
+                <tr class="opt7">
+                    <td>Tipografía Typewriter</td>
+                    <td>\texttt{...}</td>
+                </tr>
+                <tr class="opt8">
+                    <td colspan="2">Varios otros...</td>
+                </tr>
+            </table>
+        </div>
+        <div class="code-box">
+            <div class="header">
+                <h3 class="title">Cambiando Estilos al Texto</h3>
+                <a class="full-code" href="practicas/004_formatosDeTexto/main.tex" target="_blank"><i class="fa fa-code"></i></a>
+                <a class="full-sample" href="practicas/004_formatosDeTexto/main.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+            </div>
+            <div class="body">
+                Hola!, mi nombre es <span class="latex-command">\textbf<span class="param">{Emilio Hernández}</span></span>. Trabajo en el <span class="latex-command">\textsc<span class="param">{Instituto Potosino de Investigación Científica y Tecnológica, A.C.}</span></span> como <span class="latex-command">\texttt<span class="param">{Ingeniero de Software Web}</span></span>, específicamente en el <span class="latex-command">\textsf<span class="param">{You-i Lab}</span></span> (significa <span class="latex-command">\textit<span class="param">{Youth Innovation Laboratory}</span></span>.)
+                <br>
+                La clase de hoy es <span class="latex-command">\textbf<span class="param">{<span class="latex-command">\textit<span class="param">{Documentos Científicos con <span class="latex-command">\LaTeX</span>.}</span></span>}</span></span>, y es importante que <span class="latex-command">\emph<span class="param">{todos}</span></span> los miembros del equipo pongan atención.
+            </div>
+        </div>
+        <br>
+        <p>LaTeX también ofrece comandos especiales para afectar el tamaño de texto específico (frases, palabras, etc.) según sea necesario. A continuación algunos de ellos de menor tamaño a mayor y un ejemplo de uso: </p>
+        <br>
+        <div class="highlight">
+            <table>
+                <tr>
+                    <th>Tamaño</th>
+                    <th>Comando</th>
+                </tr>
+                <tr class="opt1">
+                    <td>Muy pequeño</td>
+                    <td>{\tiny ...}</td>
+                </tr>
+                <tr class="opt2">
+                    <td> </td>
+                    <td>{\scriptsize ...}</td>
+                </tr>
+                <tr class="opt3">
+                    <td> </td>
+                    <td>{\footnotesize ...}</td>
+                </tr>
+                <tr class="opt4">
+                    <td> </td>
+                    <td>{\small ...}</td>
+                </tr>
+                <tr class="opt5">
+                    <td>Tamaño normal</td>
+                    <td>{\normalsize ...}</td>
+                </tr>
+                <tr class="opt6">
+                    <td> </td>
+                    <td>{\large ...}</td>
+                </tr>
+                <tr class="opt7">
+                    <td> </td>
+                    <td>{\Large ...}</td>
+                </tr>
+                <tr class="opt8">
+                    <td> </td>
+                    <td>{\huge ...}</td>
+                </tr>
+                <tr class="opt9">
+                    <td>Muy grande</td>
+                    <td>{\Huge ...}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="code-box">
+            <div class="header">
+                <h3 class="title">Cambiando el tamaño de secciones de texto</h3>
+                <a class="full-code" href="practicas/005_tamanoDeTexto/main.tex" target="_blank"><i class="fa fa-code"></i></a>
+                <a class="full-sample" href="practicas/005_tamanoDeTexto/main.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+            </div>
+            <div class="body">
+                Hola!, mi nombre es <span class="latex-command">\textbf<span class="param">{<span class="latex-command">\huge</span> Emilio Hernández}</span></span>. Trabajo en el <span class="latex-command">\textsc<span class="param">{<span class="latex-command">\scriptsize</span> Instituto Potosino de Investigación Científica y Tecnológica, A.C.}</span></span> como <span class="latex-command">\texttt<span class="param">{Ingeniero de Software Web}</span></span>, específicamente en el <span class="latex-command">\textsf<span class="param">{<span class="latex-command">\Huge</span> You-i Lab}</span></span> (significa <span class="latex-command">\textit<span class="param">{Youth Innovation Laboratory}</span></span>.)
+                <br>
+                La clase de hoy es <span class="latex-command">\textbf<span class="param">{<span class="latex-command">\textit<span class="param">{<span class="latex-command">\Large</span> Documentos Científicos con <span class="latex-command">\LaTeX</span>.}</span></span>}</span></span>, y es importante que <span class="latex-command">\emph<span class="param">{todos}</span></span> los miembros del equipo pongan atención.
+                <br>
+                <span class="latex-command"><span class="param">{<span class="latex-command">\LARGE</span> Prueba de llaves}</span></span>
+            </div>
+        </div>
+        <br>
+        <h4 class="subtitle">Incluyendo imágenes</h4>
+        <p>Para poder añadir imágenes al documento, es necesario que nuestro primer paso sea agregar el paquete <em>graphicx</em> (<span class="inline-code">\usepackage{graphicx}</span>) a nuestro preámbulo, ya que este contiene las instrucciones necesarias para el manejo de gráficos.</p>
+        <p>Una vez añadido, podemos insertar los comandos necesarios para que latex inserte una imagen por nosotros, a continuación un ejemplo:</p>
+        <div class="code-box">
+            <div class="header">
+                <h3 class="title">Incluyendo imágenes</h3>
+                <a class="full-code" href="practicas/006_imagenes/main.tex" target="_blank"><i class="fa fa-code"></i></a>
+                <a class="full-sample" href="practicas/006_imagenes/main.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+            </div>
+            <div class="body">
+                <span class="latex-command">\begin<span class="param">{figure}[h]</span></span>
+                <br>
+                <span class="latex-command">\centering</span>
+                <br>
+                <span class="latex-command">\includegraphics<span class="param">[scale=.06]{img/milla.jpg}</span></span>
+                <br>
+                <span class="latex-command">\caption<span class="param">{Mon amour :3}</span></span>
+                <br>
+                <span class="latex-command">\end<span class="param">{figure}</span></span>
+            </div>
+        </div>
+
+        <p>Como se puede notar, utilizamos un comando de tipo environment <span class="inline-code">\begin{figure} ... \end{figure}</span> para especificar que dentro de esas instrucciones de apertura y cierre estamos planteando los comandos necesarios para que nuestra imagen se despliegue correctamente.</p>
+
+        <p>El comando <span class="inline-code">\centering</span> solo indica que queremos que la imagen esté centrada. Si no especificamos dicho comando, nuestra imagen quedará orientada a la izquierda por default.</p>
+
+        <p>La instrucción <span class="inline-code">\includegraphics{img/milla.jpg}</span> está diciendo al procesador de texto el directorio en que la imagen que queremos incluir se encuentra. La configuración extra <span class="inline-code">[scale=<em>t</em>]</span> que notamos en la instrucción es para mencionar cuanto queremos que escale la imagen al incluirla en el documento, en donde <em>t = 1</em> representa el tamaño original de la imagen, <em>t < 1</em> quiere decir que la imagen será menor a la del tamaño original y <em>t > 0</em> especifica que queremos ampliarla.</p>
+
+        <p>El comando <span class="inline-code">\caption{...}</span> especifica el texto que contendrá el pie de nuestra imagen. La numeración que se antepone de manera automática es generada de acuerdo al conteo de imágenes por capítulo.</p>
+
+        <br>
+
+
+
+        <h4 class="subtitle">Agregando fórmulas matemáticas</h4>
+        <p>...</p>
+        <a class="important-link" href="http://www.ptep-online.com/ctan/symbols.pdf" target="_blank">Lista de símbolos matemáticos del <span class="important-word">paquete amsmath</span>. <i class="fa fa-external-link"></i></a>
     </main>
 </body>
 

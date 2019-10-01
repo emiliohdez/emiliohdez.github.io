@@ -1,0 +1,43 @@
+code, .inline-code {
+    font-family: Consolas, "Liberation Monoy", Courier, monospace;
+}
+
+.inline-code {
+    color: #5d79bb;
+}
+
+.latex-code .comment {
+    color: #a6bbc4;
+}
+
+.latex-code .open-key,
+.latex-code .close-key {
+    color: #b58900;
+}
+
+.latex-code .line-key {
+    color: #6c71c4;
+}
+
+.line-key>.settings {
+    color: #268bd2;
+}
+
+.line-key>.params {
+    color: pink;
+}
+
+
+.code-box > .body{
+	padding:15px 25px;
+	font-family: Consolas, "Liberation Monoy", Courier, monospace;
+	line-height: 1.2em;
+	color: #404040;
+}
+
+.latex-command{
+	color:#6c71c4;
+}
+.latex-command > .param{
+	color:#d66bc8;
+}
