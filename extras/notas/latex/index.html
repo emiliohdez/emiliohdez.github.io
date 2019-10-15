@@ -346,6 +346,94 @@
         <h4 class="subtitle">Agregando fórmulas matemáticas</h4>
         <p>...</p>
         <a class="important-link" href="http://www.ptep-online.com/ctan/symbols.pdf" target="_blank">Lista de símbolos matemáticos del <span class="important-word">paquete amsmath</span>. <i class="fa fa-external-link"></i></a>
+
+        <h4 class="subtitle">Referencias cruzadas</h4>
+        <p>Son utilizadas para apuntas a ciertos componentes en nuestro texto, como a imágenes, tablas, algoritmos, ecuaciones, etc.</p>
+
+
+        <div class="code-box">
+            <div class="header">
+                <h3 class="title">Referenciando componentes en nuestro texto</h3>
+                <a class="full-code" href="practicas/007_Referencias/main.tex" target="_blank"><i class="fa fa-code"></i></a>
+                <a class="full-sample" href="practicas/007_Referencias/main.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+            </div>
+            <div class="body">
+                <br>
+
+                blah blah blah, más texto..., <span class="latex-command">\ref<span class="param">{IDENTIFICADOR}</span></span>, más texto...
+                <br><br>
+                
+                <span class="latex-command">\begin<span class="param">{figure}[h]</span></span>
+                <br>
+                <span class="latex-command">\centering</span>
+                <br>
+                <span class="latex-command">\includegraphics<span class="param">[scale=.06]{img/milla.jpg}</span></span>
+                <br>
+                <span class="latex-command">\caption<span class="param">{Mon amour :3}</span></span>
+                <br>
+                <span class="latex-command">\label<span class="param">{IDENTIFICADOR}</span></span>
+                <br>
+                <span class="latex-command">\end<span class="param">{figure}</span></span>
+
+
+                <br><br>
+
+blah blah blah, más texto..., <span class="latex-command">\ref<span class="param">{OTROIDENTIFICADOR}</span></span>, más texto...
+                <br><br>
+
+                <span class="latex-command">\begin<span class="param">{equation}</span></span><br>
+                <span class="latex-command">\label<span class="param">{OTROIDENTIFICADOR}</span></span> <br>
+                x^n + y^n = z^n <br>
+                <span class="latex-command">\end<span class="param">{equation}</span></span>
+
+                <br>
+
+            </div>
+        </div>
+
+        <p><strong>PDFLaTeX</strong> => <strong>PDFLaTeX</strong> </p>
+
+<br>
+        <h4 class="subtitle">Citas bibliográficas</h4>
+
+        <p>LaTeX permite la generación automática de nuestras referencias bibliográficas según sean citadas en nuestro documento. Para lograr esto, debemos contar con un archivo que contenga nuestras citas bibliográficas en un formato conocido como <strong><em>bib</em></strong>, que de manera general describe los datos bibliográficos de una publicación específica en determinado formato de texto manipulable.</p>
+
+        <a class="important-link" href="https://www.bibsonomy.org" target="_blank">Este sitio contiene la información bibliográfica de muchas publicaciones. <i class="fa fa-external-link"></i></a>
+        
+
+        <div class="code-box">
+            <div class="header">
+                <h3 class="title">Incluyendo la bibliografía</h3>
+                <a class="full-code" href="practicas/008_citas/main.tex" target="_blank"><i class="fa fa-code"></i></a>
+                <a class="full-sample" href="practicas/008_citas/main.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+            </div>
+            <div class="body">
+                <br>
+
+                blah blah blah, más texto..., <span class="latex-command">\cite<span class="param">{REFERENCIA}</span></span>
+                <br><br>
+                ...
+                <br><br>
+
+                <span class="latex-command">\bibliography<span class="param">{NOMBREDEARCHIVO}</span></span>
+                <br>
+
+                <span class="latex-command">\bibliographystyle<span class="param">{ESTILO}</span></span>
+                <br>
+                <br>
+
+
+                <span class="latex-command">\end<span class="param">{document}</span></span>
+                <br>
+
+            </div>
+        </div>
+
+        <p>Respecto a los <span class="important-word">estilos bibliográficos</span>, LaTeX nos permite implementar los siguientes: <em>abbrv</em>, <em>acm</em>, <em>alpha</em>, <em>apalike</em>, <em>ieeetr</em>, <em>plain</em>, <em>siam</em> y <em>unsrt</em>. Puedes probar todos y ver las diferencias :)</p>
+
+        <br>
+
+        <p><strong>PDFLaTeX</strong> => <strong>BibTeX</strong> => <strong>PDFLaTeX</strong> => <strong>PDFLaTeX</strong> </p>
     </main>
 </body>
 

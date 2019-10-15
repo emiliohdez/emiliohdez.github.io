@@ -1,0 +1,101 @@
+\documentclass[12pt,letterpaper,oneside]{book}
+
+\usepackage[utf8]{inputenc}
+
+% Paquete con configuraciones necesarias para cambiar el margen de las páginas
+\usepackage[left=1.5cm, right=1.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+% Paquete necesario para incluir una imagen en el documento
+\usepackage{graphicx}
+
+\usepackage{amsmath}
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+\title{Referenciando}
+\author{Emilio-Ernesto Hernández-Huerfano}
+
+\begin{document}
+
+
+
+\maketitle
+\tableofcontents
+\listoffigures
+
+
+\chapter{Milla}
+\noindent Fusce et neque ultrices, tempus sem ac, bibendum dolor. Suspendisse faucibus, lorem nec ultricies hendrerit, porttitor felis ligula quis risus. Mauris malesuada gravida libero. Donec a pretium dui. Duis pulvinar ligula at magna porta, at porta ipsum \textbf{consectetur}. Aenean pellentesque urna a orci sagittis tempus. Pellentesque tincidunt dui metus, non venenatis velit varius quis (foto \ref{milla_0})
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=.08]{img/milla.jpg}
+\caption{Primera foto de mon amour}
+\label{milla_0}
+\end{center}
+
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Otras configuraciones}
+
+\noindent Fusce et neque ultrices, tempus sem ac, bibendum dolor. Suspendisse faucibus, lorem nec ultricies hendrerit, porttitor felis ligula quis risus. Mauris malesuada gravida libero. Donec a pretium dui. Duis pulvinar ligula at magna porta, at porta ipsum \textbf{consectetur}. Aenean pellentesque urna a orci sagittis tempus. Pellentesque tincidunt dui metus, non venenatis velit varius quis. (foto \ref{milla_0})
+
+\subsection{subsection}
+\noindent Fusce et neque ultrices, tempus sem ac, bibendum dolor. Suspendisse faucibus, lorem nec ultricies hendrerit, porttitor felis ligula quis risus. Mauris malesuada gravida libero. Donec a pretium dui. Duis pulvinar ligula at magna porta, at porta ipsum \textbf{consectetur}. Aenean pellentesque urna a orci sagittis tempus. Pellentesque tincidunt dui metus, non venenatis velit varius quis, cómo observamos en la figura \ref{milla_1}.
+
+\begin{figure}[ht]
+\centering
+\caption{Mon amour :3}
+\includegraphics[scale=.06]{img/milla.jpg}
+\label{milla_1}
+\end{figure}
+
+\subsection{subsection}
+\noindent Fusce et neque ultrices, tempus sem ac, bibendum dolor. Suspendisse faucibus, lorem nec ultricies hendrerit, porttitor felis ligula quis risus. Mauris malesuada gravida libero. Donec a pretium dui. Duis pulvinar ligula at magna porta, at porta ipsum \textbf{consectetur}. Aenean pellentesque urna a orci sagittis tempus. Pellentesque tincidunt dui metus, non venenatis velit varius quis (figura \ref{milla_2})
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=.1]{img/milla.jpg}
+\caption{Mon amour :3}
+\label{milla_2}
+\end{figure}
+
+ Etiam et dui et risus posuere consectetur. Praesent eu lectus est. In sed libero ut tellus varius congue sed vel urna. Morbi non est quis justo pellentesque aliquam ac in quam. Morbi mattis nulla magna, sit amet dignissim justo dapibus vel. Aliquam porttitor nulla ut purus vestibulum condimentum. Quisque at eros sed nisl elementum malesuada sed nec urna. Aliquam fringilla est ut lectus feugiat, eget porttitor dolor lacinia. In hac habitasse platea dictumst. Morbi faucibus sapien blandit elit volutpat, sit amet accumsan risus dictum.
+
+Curabitur sed ullamcorper risus. Quisque augue enim, tincidunt a lobortis a, rutrum quis augue. Praesent commodo et lectus vitae luctus. Sed feugiat est at vestibulum finibus. Fusce ut viverra nunc, ut scelerisque ipsum. Ut sit amet ligula quis mi convallis commodo sit amet consectetur urna. Nam nunc turpis, hendrerit eu sollicitudin in, eleifend vestibulum metus. Donec interdum nisi vel metus imperdiet, eget molestie ante faucibus. Proin dapibus lorem vitae dapibus pellentesque. Suspendisse quis mi risus. Nam pharetra malesuada turpis a lobortis. Proin eget malesuada sapien. Fusce vel ligula vehicula, consequat odio eu, sagittis nisi. Nulla id commodo ligula. Mauris id nibh sagittis, aliquet enim a, dignissim metus. Phasellus vitae ex vestibulum felis viverra tincidunt in eu odio. 
+
+\section{other}
+ Etiam et dui et risus posuere consectetur. Praesent eu lectus est. In sed libero ut tellus varius congue sed vel urna. Morbi non est quis justo pellentesque aliquam ac in quam. Morbi mattis nulla magna, sit amet dignissim justo dapibus vel. Aliquam porttitor nulla ut purus vestibulum condimentum. Quisque at eros sed nisl elementum malesuada sed nec urna. Aliquam fringilla est ut lectus feugiat, eget porttitor dolor lacinia. In hac habitasse platea dictumst. Morbi faucibus sapien blandit elit volutpat, sit amet accumsan risus dictum.
+
+
+Curabitur sed ullamcorper risus. Quisque augue enim, tincidunt a lobortis a, rutrum quis augue. Praesent commodo et lectus vitae luctus. Sed feugiat est at vestibulum finibus. Fusce ut viverra nunc, ut scelerisque ipsum. Ut sit amet ligula quis mi convallis commodo sit amet consectetur urna. Nam nunc turpis, hendrerit eu sollicitudin in, eleifend vestibulum metus. Donec interdum nisi vel metus imperdiet, eget molestie ante faucibus. Proin dapibus lorem vitae dapibus pellentesque. Suspendisse quis mi risus. Nam pharetra malesuada turpis a lobortis. Proin eget malesuada sapien. Fusce vel ligula vehicula, consequat odio eu, sagittis nisi. Nulla id commodo ligula. Mauris id nibh sagittis, aliquet enim a, dignissim metus. Phasellus vitae ex vestibulum felis viverra tincidunt in eu odio. 
+Curabitur sed ullamcorper risus. Quisque augue enim, tincidunt a lobortis a, rutrum quis augue. Praesent commodo et lectus vitae luctus. Sed feugiat est at vestibulum finibus. Fusce ut viverra nunc, ut scelerisque ipsum. Ut sit amet ligula quis mi convallis commodo sit amet consectetur urna. Nam nunc turpis, hendrerit eu sollicitudin in, eleifend vestibulum metus. Donec interdum nisi vel metus imperdiet, eget molestie ante faucibus. Proin dapibus lorem vitae dapibus pellentesque. Suspendisse quis mi risus. Nam pharetra malesuada turpis a lobortis. Proin eget malesuada sapien. Fusce vel ligula vehicula, consequat odio eu, sagittis nisi. Nulla id commodo ligula. Mauris id nibh sagittis, aliquet enim a, dignissim metus. Phasellus vitae ex vestibulum felis viverra tincidunt in eu odio. \ref{eq:1}
+
+\begin{equation}
+\label{eq:1}
+x^n + y^n = z^n
+\end{equation}
+
+\end{document} 
