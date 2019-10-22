@@ -18,6 +18,7 @@
 
 % Utilizado para agregar label a los componentes que no la pueden llevar
 \usepackage{caption}
+\usepackage{subcaption}
 
 %Paquete utilizado para realizar el spanning de celdas en una tabla
 \usepackage{multirow}
@@ -29,17 +30,31 @@
 
 \maketitle
 
-\section*{Listas}
+\section{Listas}
 
-\noindent Las listas son componentes sencillos en \LaTeX, y existen de tipo \textbf{ordenada} (\ref{itm:important}) y \textbf{no-ordenada}:
+\noindent Las listas son componentes sencillos en \LaTeX, y existen de tipo \textbf{ordenada} (\ref{prop:orderedlist}.\ref{itm:important}) y \textbf{no-ordenada}:
 
-\begin{multicols}{2}
+\begin{multicols}{3}
 
 \begin{itemize} \label{prop:unorderedlist}
-	\item Elemento de la lista
-	\item Elemento de la lista
-	\item Elemento de la lista
+	\item Elemento de la lista 1
+	\item[-] cdf
+	\item Elemento de la lista 2
+	\item Elemento de la lista 3
 \end{itemize}
+
+\columnbreak
+
+\begin{enumerate} \label{prop:orderedlist}
+	\item ...
+	\begin{enumerate} \label{prop:orderedlist}
+	\item Elemento de la lista
+	\item\label{itm:important} Elemento de la lista
+	\item Elemento de la lista
+	\end{enumerate}
+	\item\label{itm:important} Elemento de la lista
+	\item Elemento de la lista
+\end{enumerate}
 
 \columnbreak
 
@@ -59,8 +74,8 @@ Efectivamente también pueden combinarse... that's your work ;)
 \noindent Una tabla es un componente de línea separada (a diferencia de una equación que puede estar en la misma línea que el texto, como $f(x)=0$).
 
 \begin{center}
-\begin{tabular}{r c c }
- Computación & 24 & 30 \\ 
+\begin{tabular}{ l c r }
+ Computación & 24 & Emilio \\ 
  Química & 10 & 35 \\ 
  Geología & 20 & 2 \\ 
 \end{tabular}
@@ -73,7 +88,9 @@ Se utilizará el ambiente \verb|\begin{tabular}{r c c } ... \end{tabular}| para 
 \begin{tabular}{ |c|c|c| } 
  \hline %Utilizada para generar una línea horizontal
  celda1 & celda2 & celda3 \\ 
+ \hline 
  celda4 es algo larga & celda5 & celda6 \\ 
+ \hline 
  celda7 & celda8 & celda9 \\ 
  \hline %Utilizada para generar una línea horizontal
 \end{tabular}
@@ -93,7 +110,7 @@ Para agregar un header se utiliza una estructura muy similar, no hay un componen
  %Esto define que la primera fila será presentada separada del resto de las filas
  \hline
    Nombre & Apellido & Edad  \\ [0.5ex] 
- \hline\hline
+ \hline \hline
  Emilio & Hernández & 26  \\ 
  \hline
  Leonardo & Álvarez & 27 \\
@@ -122,6 +139,33 @@ También es posible agregar referencias a la tabla, así como un texto descripti
 
 \end{multicols}
 
+
+
+\begin{figure}
+     \centering
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{haversine.png}
+         \caption{$y=x$}
+         \label{fig:y equals x}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{haversine.png}
+         \caption{$y=3sinx$}
+         \label{fig:three sin x}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{haversine.png}
+         \caption{$y=5/x$}
+         \label{fig:five over x}
+     \end{subfigure}
+        \caption{Three simple graphs}
+        \label{fig:three graphs}
+\end{figure}
 
 
 
