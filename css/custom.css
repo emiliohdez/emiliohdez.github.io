@@ -1,0 +1,60 @@
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    #top-menu{
+    	
+    	height: 4em;
+    	padding: 10px 50px;
+    	position: fixed;
+    	top: 0;
+    	width: 100%;
+
+    	/* Detele this */ background-color: #041C42;
+    }
+
+    #top-menu > * {
+    	display:inline-block;
+    }
+
+    .logo{
+    	height: 100%;
+    }
+
+    #top-menu ul {
+    	float: right;
+    	height: 100%;
+    }
+
+    #top-menu li{
+    	align-items: center;
+    	display: inline-flex;
+    	height: 100%;
+    	justify-content: center;
+    	margin-left: 15px;
+    }
+
+    #top-menu a{
+    	color: rgba(255, 255, 255, .6);
+    	font-family: helvetica;
+    	cursor: pointer;
+    	text-decoration: none;
+    	text-transform: uppercase;
+    }
+    a.current{
+    	color: white !important;
+    }
+
+
+
+    /**  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+     
