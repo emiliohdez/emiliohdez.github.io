@@ -35,7 +35,6 @@ h6 {
 a,
 p {
     font-family: 'Raleway';
-    line-height: 1.1em;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -79,11 +78,11 @@ p {
     transition: text-shadow .5s ease;
 }
 
-a.current {
+#top-menu a.current {
     color: white !important;
 }
 
-a:not(.current):hover {
+#top-menu a:not(.current):hover {
     text-shadow: 0px 0px 10px rgba(206, 206, 206, 0.8);
 }
 
@@ -98,6 +97,7 @@ section {
 
 section:nth-child(2) {
     align-items: center;
+    color: #333;
     display: flex;
     height: calc(100% - 4em);
     margin-top: 4em;
@@ -120,9 +120,22 @@ section:nth-child(2)>* {
     width: 300px;
 }
 
-#brief {
-    font-size: 1.2em;
+.social > a{
+	color: #18A4E092;
+	cursor: pointer;
+	font-size: 1.3em;
+	margin: 0 3px;
+	text-decoration: none;
+	transition: color 5s ease;
+}
 
+.social > a:hover{
+	color: #18A4E0;
+}
+
+#brief {
+    font-size: 1.25em;
+    line-height: 1.25em;
 }
 
 #brief>* {
