@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:700|Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/hambutton.css" />
     <style type="text/css">
     </style>
 </head>
@@ -16,11 +17,17 @@
 <body>
     <nav class="menu" id="top-menu">
         <img class="logo" src="imgs/logoE.png" />
+        <button class="hamburger hamburger--spring" type="button" onclick="hamButtonToggle(this)">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
         <ul>
-            <li><a href="index.html" class="current">Intro</a></li>
-            <li><a href="blog.html">Projects</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" class="current">intro</a></li>
+            <li><a href="about-me.html">about</a></li>
+            <li><a href="projects.html">projects</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact</a></li>
         </ul>
     </nav>
     <section>
@@ -38,15 +45,48 @@
         <div id="brief">
             <h3>Hi there!</h3>
             <p>My name is Emilio and I was born in Veracruz, México. I studied Computer Systems Engineering at the Tecnológico Nacional de México.</p>
-            <p>Currently, I'm working as a <span class="special-text">Full-Stack Software Developer</span> in the <a href=""><span class="special-text">You-i Lab</span></a>, an amazing team which is part of the supercomputing side of the Instituto Potosino de Investigación Científica y Tecnológica (IPICYT), so I'm based at San Luis Potosí City.</p>
+            <p>Currently, I'm working as a <span class="special-text">Full-Stack</span> Software Developer in the <a href="http://youilab.ipicyt.edu.mx/You-i.Lab/">You-i Lab</a>, an amazing team which is part of the supercomputing side of the Instituto Potosino de Investigación Científica y Tecnológica (<a href="http://ipicyt.edu.mx">IPICYT</a>), so I'm based at San Luis Potosí City.</p>
         </div>
     </section>
+    
     <section>
-        <div id="work">
-            <h3>I've collaborated with...</h3>
+        <div id="links">
+            <h3>Now you can...</h3>
+            <div class="cards-wrapper">
+                <a href="about-me.html" class="card" style="background-image: url('imgs/backgrounds/about.jpg');">
+                    <div class="background"></div>
+                    <div class="color"></div>
+                    <p class="static-text">Meet me a little more</p>
+                </a>
+                <a href="projects.html" class="card" style="background-image: url('imgs/backgrounds/projects.jpg');">
+                    <div class="background"></div>
+                    <div class="color"></div>
+                    <p class="static-text">Give a look at my projects</p>
+                </a>
+                <a href="blog.html" class="card" style="background-image: url('imgs/backgrounds/blog.jpg');">
+                    <div class="background"></div>
+                    <div class="color"></div>
+                    <p class="static-text">Read something in my blog</p>
+                </a>
+                <a href="contact.html" class="card" style="background-image: url('imgs/backgrounds/contact.jpg');">
+                    <div class="background"></div>
+                    <div class="color"></div>
+                    <p class="static-text">Get in touch with me</p>
+                </a>
+            </div>
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        
+        function hamButtonToggle(node){
+            $(node).toggleClass("is-active");
+            $(".menu > ul").toggleClass("visible");
+        }
+    </script>
+
+
 </body>
 
 </html>
