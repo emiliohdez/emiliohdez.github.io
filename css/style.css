@@ -57,6 +57,11 @@ section>div>p {
     margin-top: 2vh;
 }
 
+section > h2 {
+    font-size: 3em;
+    margin-bottom: 3vh;
+}
+
 .special-text {
     background: -webkit-linear-gradient(20deg, rgba(4, 51, 83, 1) 30%, rgba(24, 164, 224, 1) 67%);
     font-weight: bold;
@@ -135,11 +140,22 @@ section>div>p {
 
 
 
+.banner {
+    background-position:  center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+
+}
+
+
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* For content */
 
 section {
-    padding: 7vh 6vw;
+    padding: 7vh 6vw 3vh 6vw;
 }
 
 section>div {
