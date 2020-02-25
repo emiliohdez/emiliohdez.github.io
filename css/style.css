@@ -57,7 +57,7 @@ section>div>p {
     margin-top: 2vh;
 }
 
-section > h2 {
+section>h2 {
     font-size: 3em;
     margin-bottom: 3vh;
 }
@@ -141,13 +141,55 @@ section > h2 {
 
 
 .banner {
-    background-position:  center center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
     width: 100%;
 
 }
+
+.container {
+    width: 100%;
+}
+
+.container>.tile {
+    align-items: center;
+    border-radius: 7px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: calc(97% / 3);
+}
+
+.tile>img {
+    width: 100%;
+}
+
+.tile>.overlay {
+
+    background: -moz-linear-gradient(0deg, rgba(4,51,83,0.7) 17%, rgba(24,164,224,0.6) 91%);
+    background: -webkit-linear-gradient(0deg, rgba(4,51,83,0.7) 17%, rgba(24,164,224,0.6) 91%);
+    background: -o-linear-gradient(0deg, rgba(4,51,83,0.7) 17%, rgba(24,164,224,0.6) 91%);
+    background: -ms-linear-gradient(0deg, rgba(4,51,83,0.7) 17%, rgba(24,164,224,0.6) 91%);
+    background: linear-gradient(0deg, rgba(4,51,83,0.7) 17%, rgba(24,164,224,0.6) 91%);
+
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+}
+
+.tile>p {
+    color: white;
+    font-size: 1.3em;
+    position: absolute;
+}
+
+
 
 
 
