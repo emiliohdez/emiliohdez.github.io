@@ -1,0 +1,98 @@
+@media (min-width: 576px) { 
+
+	#top-menu ul {
+		padding: 12vh 0 12vh 0;
+	}
+
+	#top-menu li {
+	    font-size: 6vw;
+	    width: 70%;
+	}
+
+	.banner {
+		height: 70vh;
+	}
+
+	.container>.tile {
+		margin: 2%;
+	    width: calc(86.5% / 3);
+	}
+
+	section {
+	    padding: 7vh 10vw 3vh 10vw;
+	}
+
+	.profile > * {
+		width: 60%;
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+	#profile>* {
+	    width: 51%;
+	}
+
+	.card {
+		display: inline-block;
+		margin: 4vh 2% 0 2%;
+		padding: 6vh 4vh;
+		width: 45%;
+	}
+	.card > .background {
+		transform: translate(-4vw, -6vh);
+	}
+	
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+	section:nth-child(2) {
+		align-items: center;
+	    display: flex;
+	    padding-top: calc(7vh + 60px);
+	}
+
+	#profile>* {
+	    width: 60%;
+	}
+
+	#top-menu {
+		background: #043353;
+		height: 60px;
+		padding: 0 10vw;
+	}
+
+	#top-menu ul {
+		flex-wrap: nowrap;
+		float: right;
+		height: 60px;
+		padding: 0;
+		position: relative;
+		right: unset;
+		width: auto;
+	}
+
+	#top-menu li {
+	    font-size: 1em;
+	    margin: 0 1vw;
+	}
+
+	.menu > .hamburger {
+		display: none !important;
+	}
+
+	.container > .tile {
+	    width: calc(82.50% / 4);
+	}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+
+}
