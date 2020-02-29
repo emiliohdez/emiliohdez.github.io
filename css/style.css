@@ -156,9 +156,10 @@ section>h2 {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 1%;
     position: relative;
     overflow: hidden;
-    width: calc(97% / 3);
+    width: calc(94% / 3);
 }
 
 .tile>img {
