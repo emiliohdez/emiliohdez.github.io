@@ -69,6 +69,28 @@ section>h2 {
     -webkit-text-fill-color: transparent;
 }
 
+
+
+
+#dynamic-text {
+    font-weight:  bold;
+    letter-spacing: 1px;
+    color: #043353;
+    background-image: -webkit-linear-gradient(92deg, #043353, #18A4E0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 7s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* For the navbar */
 
