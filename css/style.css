@@ -34,7 +34,7 @@ h6 {
 }
 
 h3 {
-    font-size: 1.8em;
+    font-size: 2.4em;
 }
 
 a,
@@ -53,8 +53,8 @@ p>a {
 
 section>div>p {
     font-size: 1.2em;
-    line-height: 1.3em;
-    margin-top: 2vh;
+    line-height: calc(1.2em * 1.5);
+    margin-top: 1.3em;
 }
 
 section>h2 {
@@ -282,4 +282,12 @@ a.card p {
     height: 120%;
     transform: translate(-12vw, -8vh);
     background: #18A4E075;
+}
+
+
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+    z-index: unset !important;
 }
