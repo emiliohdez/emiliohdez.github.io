@@ -23,9 +23,9 @@ function changeDynamicText() {
     if (index == dynamicTexts.length)
         index = 0;
     $("#profile > p").fadeOut(function() {
-        $("#dynamic-text").text(dynamicTexts[index])
+        $("#dynamic-text").text(dynamicTexts[index]);
+        index++;
     }).fadeIn();
-    index++;
 }
 
 loopFunction(5000, changeDynamicText);
