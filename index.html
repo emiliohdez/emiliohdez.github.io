@@ -35,7 +35,7 @@
         <div id="profile">
             <img src="imgs/me.jpg">
             <h1>Emilio Hernández</h1>
-            <p>26 y.o.</p>
+            <p>I like <span id="dynamic-text">...</span></p>
             <div class="social">
                 <a href="mailto:emiliohdezhfno@gmail.com?subject=From my site"><i class="fa fa-envelope"></i></a>
                 <a href="https://twitter.com/emiliohdezhfno"><i class="fa fa-twitter"></i></a>
@@ -49,7 +49,49 @@
             <p>Currently, I'm working as a <span class="special-text">Full-Stack</span> Software Developer in the <a href="http://youilab.ipicyt.edu.mx/You-i.Lab/">You-i Lab</a>, an amazing team which is part of the supercomputing side of the Instituto Potosino de Investigación Científica y Tecnológica (<a href="http://ipicyt.edu.mx">IPICYT</a>), so I'm based at San Luis Potosí City.</p>
         </div>
     </section>
-    
+        <section>
+        <h3>Some languages & tools that I use the most...</h3>
+        <div class="container">
+            <div class="tile">
+                <img src="imgs/tech/java-lang.png"/>
+                <div class="overlay"></div>
+                <p>Java</p>
+            </div><div class="tile">
+                <img src="imgs/tech/php-lang.png"/>
+                <div class="overlay"></div>
+                <p>PHP</p>
+            </div><div class="tile">
+                <img src="imgs/tech/julia-lang.png"/>
+                <div class="overlay"></div>
+                <p>Julia</p>
+            </div><div class="tile">
+                <img src="imgs/tech/python-lang.png"/>
+                <div class="overlay"></div>
+                <p>Python</p>
+            </div><div class="tile">
+                <img src="imgs/tech/javascript-lang.png"/>
+                <div class="overlay"></div>
+                <p>JavaScript</p>
+            </div><div class="tile">
+                <img src="imgs/tech/jupyter-tool.png"/>
+                <div class="overlay"></div>
+                <p>Jupyter</p>
+            </div><div class="tile">
+                <img src="imgs/tech/bootstrap-frame.png"/>
+                <div class="overlay"></div>
+                <p>Bootstrap</p>
+            </div><div class="tile">
+                <img src="imgs/tech/mysql-db.png"/>
+                <div class="overlay"></div>
+                <p>MySQL</p>
+            </div><div class="tile">
+                <img src="imgs/tech/mongodb.png"/>
+                <div class="overlay"></div>
+                <p>MongoDB</p>
+            </div>
+
+        </div>
+    </section>
     <section>
         <div id="links">
             <h3>Now you can...</h3>
@@ -87,6 +129,8 @@
             $(".menu > ul").toggleClass("visible");
         }
     </script>
+
+    <script type="text/javascript" src="js/dynamic-text.js"></script>
 
 
 </body>

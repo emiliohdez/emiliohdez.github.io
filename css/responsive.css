@@ -86,7 +86,7 @@
 	}
 
 	.container > .tile {
-	    width: calc(82.50% / 4);
+	    width: calc(84% / 4);
 	}
 
 }
@@ -94,5 +94,8 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 
+	.container > .tile {
+	    width: calc(80% / 5);
+	}
 
 }
