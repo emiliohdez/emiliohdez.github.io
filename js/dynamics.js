@@ -29,3 +29,10 @@ function changeDynamicText() {
 }
 
 loopFunction(5000, changeDynamicText);
+
+
+
+function hamButtonToggle(node) {
+    $(node).toggleClass("is-active");
+    $(".menu > ul").toggleClass("visible");
+}

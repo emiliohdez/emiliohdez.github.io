@@ -62,34 +62,13 @@ section>h2 {
     margin-bottom: 3vh;
 }
 
-.special-text {
-    background: -webkit-linear-gradient(20deg, rgba(4, 51, 83, 1) 30%, rgba(24, 164, 224, 1) 67%);
+.special-text, #dynamic-text {
+    background: -webkit-linear-gradient(80deg, rgba(4, 51, 83, 1) 30%, rgba(24, 164, 224, 1) 67%);
     font-weight: bold;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-
-
-
-#dynamic-text {
-    font-weight:  bold;
-    letter-spacing: 1px;
-    color: #043353;
-    background-image: -webkit-linear-gradient(92deg, #043353, #18A4E0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 7s infinite linear;
-}
-
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
-}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* For the navbar */
@@ -279,7 +258,7 @@ section>div {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    border-radius: 11px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
     display: block;
     margin-top: 4vh;
     padding: 8vh 12vw;
