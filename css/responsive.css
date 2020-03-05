@@ -89,6 +89,10 @@
 	    width: calc(84% / 4);
 	}
 
+	img.text-related {
+		width: 80%;
+	}
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -96,6 +100,10 @@
 
 	.container > .tile {
 	    width: calc(80% / 5);
+	}
+
+	img.text-related {
+		width: 60%;
 	}
 
 }
