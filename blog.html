@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Blog | Emilio Hdez</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:700|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="css/hambutton.css"/>
+</head>
+
+<body>
+<nav class="menu" id="top-menu">
+    <img class="logo" src="imgs/logoE.png" onclick="window.location.href = 'index.html';"/>
+    <button class="hamburger hamburger--spring" type="button" onclick="hamButtonToggle(this)">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+    </button>
+    <ul>
+        <li><a href="index.html">intro</a></li>
+        <li><a href="about-me.html">about</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li class="current"><a href="blog.html">blog</a></li>
+    </ul>
+</nav>
+<section id="posts">
+    <h2>Let me talk about...</h2>
+    <div class="container">
+        <div class="post">
+            <a href="extras/blog/2019_first_hack.html">
+                <h2>First hackathon</h2>
+                <p>Yes, it was the first... and yes, we won!</p>
+                <span>06/12/2019</span>
+                <div class="background">
+                    <svg class="teaser__flourish-shape" viewBox="0 10 520 348">
+                        <path id="image" fill="#fbf7de" style="bottom: 0;position: absolute;" d="M-9,109l4,196,513,2L507-6S460.293,95.867,364,97,258.5,77.762,174,76-8.223,93.07-9,109Z"></path>                        <clipPath id="clip">
+                        <use href="#image" style="overflow:visible;"></use>
+                    </clipPath>
+                        <g style="clip-path:url(#clip);">
+                            <image style="overflow:visible; height: 100%;" href="imgs/blog/title_hackathon.png" x="0" y="0"></image>
+                        </g>
+                    </svg>
+                </div>
+            </a>
+        </div><div class="post">
+            <a href="#">
+                <h2>First hackathon</h2>
+                <p>Yes, it was the first... and yes, we won!</p>
+                <span>06/12/2019</span>
+                <div class="background">
+                    <svg class="teaser__flourish-shape" viewBox="0 10 520 348">
+                        <path id="image" fill="#fbf7de" style="bottom: 0;position: absolute;" d="M-9,109l4,196,513,2L507-6S460.293,95.867,364,97,258.5,77.762,174,76-8.223,93.07-9,109Z"></path>                        <clipPath id="clip">
+                        <use href="#image" style="overflow:visible;"></use>
+                    </clipPath>
+                        <g style="clip-path:url(#clip);">
+                            <image style="overflow:visible; height: 100%;" href="imgs/blog/title_hackathon.png" x="0" y="0"></image>
+                        </g>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/parallax.js"></script>
+<script type="text/javascript" src="js/dynamics.js"></script>
+
+</body>
+</html>
