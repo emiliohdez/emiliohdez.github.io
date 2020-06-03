@@ -136,10 +136,12 @@ section>div.content{
 #profile>h1{
 font-size: 1.8em;
 }
-#profile > .social {
+.content > .social {
     font-size: 1.3em;
+    text-align: center;
+    width: 100%;
 }
-#profile > .social > a {
+.content > .social > a {
     color: #2ED3C6;
     margin: 0 5px
 }
@@ -182,6 +184,11 @@ div.picture{
     font-size: 1.1em;
     line-height: calc(1.2em * 1.5);
     padding: 10px 0;
+}
+.content>p>a{
+    text-decoration: underline;
+    text-decoration-color: #AFE19F;
+    text-decoration-style: double;
 }
 .content>.container{
     width: 100%;
