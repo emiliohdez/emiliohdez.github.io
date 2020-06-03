@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>EmilioHdez | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Raleway:wght@400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/styles-v2.css"/>
+    <link rel="stylesheet" type="text/css" href="css/hambutton.css"/>
+</head>
+<body>
+
+<main>
+    <div id="nav-bar">
+        <div class="left-side">
+            <a href="#" class="invisible"><img src="imgs/logoE.png" alt=""></a>
+        </div>
+        <div class="right-side">
+            <ul>
+                <li><a href="#" class="active">intro</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">notes</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <button class="invisible hamburger hamburger--spring" onclick="hamButtonToggle(this)">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </div>
+    <section>
+        <div id="profile" class="content">
+            <div class="picture" style="background-image: url('imgs/me.jpg')"></div>
+            <h1>Emilio Hernández</h1>
+            <p style="display: block;">I like <span id="dynamic-text">traveling México :D</span></p>
+            <div class="social">
+                <a href="mailto:emiliohdezhfno@gmail.com?subject=From my site"><i class="fa fa-envelope"></i></a>
+                <a href="https://twitter.com/emiliohdezhfno"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/emiliohdez/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/emiliohdez"><i class="fa fa-github-alt"></i></a>
+
+            </div>
+        </div>
+        <div class="content">
+            <h2> Hi there! </h2>
+            <p>My name is Emilio and I'm a Computer Systems Engineer born in Veracruz, México.</p>
+            <p>Currently, I'm working as a <span class="special-text">Full-Stack</span> Software Developer in the Youth
+                Innovation Laboratory (<a href="http://youilab.ipicyt.edu.mx/You-i.Lab/">You-i Lab</a>), an amazing team
+                which is part of the supercomputing side of the Instituto Potosino de Investigación Científica y
+                Tecnológica
+                (<a href="http://ipicyt.edu.mx">IPICYT</a>), so I'm based at San Luis Potosí City.</p>
+        </div>
+    </section>
+    <section>
+        <div class="content">
+            <h2> Some tech skills</h2>
+            <p>I'm usually trying to learn about new tools and technologies, but maybe the following are the ones that I
+                use the most:</p>
+            <div class="container">
+                <div class="tile">
+                    <img src="imgs/tech/java-lang.png"/>
+                    <div class="overlay"></div>
+                    <p>Java</p>
+                </div><div class="tile">
+                    <img src="imgs/tech/php-lang.png"/>
+                    <div class="overlay"></div>
+                    <p>PHP</p>
+                </div><div class="tile">
+                    <img src="imgs/tech/julia-lang.png"/>
+                    <div class="overlay"></div>
+                    <p>Julia</p>
+                </div><div class="tile">
+                    <img src="imgs/tech/python-lang.png"/>
+                    <div class="overlay"></div>
+                    <p>Python</p>
+                </div><div class="tile">
+                    <img src="imgs/tech/javascript-lang.png"/>
+                    <div class="overlay"></div>
+                    <p>JavaScript</p>
+                </div><div class="tile">
+                    <img src="imgs/tech/jupyter-tool.png"/>
+                    <div class="overlay"></div>
+                    <p>Jupyter</p>
+                </div><div class="tile">
+                    <img src="imgs/tech/bootstrap-frame.png"/>
+                    <div class="overlay"></div>
+                    <p>Bootstrap</p>
+                </div><div class="tile">
+                    <img src="imgs/tech/mysql-db.png"/>
+                    <div class="overlay"></div>
+                    <p>MySQL</p>
+                </div><div class="tile">
+                    <img src="imgs/tech/mongodb.png"/>
+                    <div class="overlay"></div>
+                    <p>MongoDB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+        crossorigin="anonymous"></script>
+<script>
+    function hamButtonToggle(node) {
+        $(node).toggleClass("is-active");
+        $("#nav-bar>.right-side>ul").toggleClass("active");
+    }
+</script>
+
+</body>
+</html>
