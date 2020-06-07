@@ -266,6 +266,44 @@ div.picture{
     #nav-bar {
         padding: 14px 150px;
     }
+
+
+
+
+    #nav-bar > .right-side > ul, #nav-bar > .right-side > ul.active{
+        background-color: unset;
+        border-radius: 0;
+        height: unset;
+        left: unset;
+        padding: 0;
+        position: relative;
+        top: 0;
+        transition: unset;
+        width: unset;
+        z-index: 0;
+    }
+    #nav-bar > .right-side > ul > li {
+        padding: 0 20px;
+        display: inline-block;
+    }
+    #nav-bar > .right-side > ul > li:nth-child(1) {
+        margin-top: 0;
+    }
+    #nav-bar > .right-side > ul > li > a {
+        font-size: .9em;
+        font-weight: normal;
+        letter-spacing: .05em;
+    }
+    #nav-bar > .right-side > .hamburger{
+        display: none;
+    }
+
+
+
+
+
+
+
     #profile>div.picture{
         max-height: 300px;
         max-width: 300px;
