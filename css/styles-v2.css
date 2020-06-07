@@ -7,6 +7,7 @@
 h1, h2, h3, h4, h5 {
     color: #3e3e3e;
     font-family: 'PT Serif', serif;
+    transition: color .5s ease;
 }
 p, a{
     color: #535353;
@@ -175,6 +176,11 @@ div.picture{
 }
 .content>h2{
     font-size: 2.1em;
+    margin-bottom: 15px;
+}
+.content>h4{
+    font-size: 1.4em;
+    margin: 30px 0 20px;
 }
 .content>h2::before {
     color: #AFE19F;
@@ -194,6 +200,9 @@ div.picture{
     text-decoration-style: double;
 }
 .content>.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
 }
 .tile {
@@ -224,8 +233,38 @@ div.picture{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.card {
+    border-radius: 15px;
+    position: relative;
+}
+.button-card {
+    border: 3px solid #2ed3c6;
+    margin: 15px calc(10%/4);
+    padding: 3em 35px;
+    transition: background .5s ease;
+    width: 95%;
 
-
+}
+.button-card:hover {
+    background: #2ed3c6;
+}
+.button-card:hover a, .button-card:hover h3, .button-card:hover h4{
+    color:white;
+}
+.link-card > a {
+    font-size: 1.2em;
+    height: 100%;
+    left: 0;
+    margin-top: calc(2.5em/1.2);
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 0;
+    width: 100%;
+}
+a>h3{
+    font-family: inherit;
+}
 
 
 
@@ -260,6 +299,10 @@ div.picture{
         padding: 25px;
         width: 17%;
     }
+
+    .button-card{
+        width: 45%;
+    }
 }
 
 @media (min-width: 992px) {
@@ -293,6 +336,10 @@ div.picture{
         font-size: .9em;
         font-weight: normal;
         letter-spacing: .05em;
+    }
+    #nav-bar > .right-side > ul > li > a.active::after{
+        bottom: -1px;
+        width: auto;
     }
     #nav-bar > .right-side > .hamburger{
         display: none;
