@@ -17,6 +17,8 @@ html, body {
     width: 100%;
 }
 main {
+    margin: auto;
+    max-width: 1300px;
     width: 100%;
 }
 
@@ -25,10 +27,11 @@ main {
 #nav-bar {
     align-items: center;
     background-color: #171D4B;
-    border-radius: 0 0 30px 30px;
+    border-radius: 0 0 40px 40px;
     color: white;
     display: flex;
     justify-content: space-between;
+    max-width: 1300px;
     padding: 14px 30px;
     position: fixed;
     top: 0;
@@ -37,7 +40,7 @@ main {
 }
 #nav-bar>.right-side>ul{
     background-color: #171D4B;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 40px 40px;
     height: 1px;
     left: 0;
     overflow-y: hidden;
