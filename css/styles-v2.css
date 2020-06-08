@@ -266,6 +266,27 @@ a>h3{
     font-family: inherit;
 }
 
+.image-container{
+    width: 100%;
+    overflow: hidden;
+    margin: 35px auto;
+    position: relative;
+    border-radius: 11px;
+}
+.image-container > p {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background: #2ed3c6;
+    width: 100%;
+    text-align: right;
+    color: white;
+    font-style: italic;
+    font-size: .9em;
+}
+.image-container > img {
+    width: 100%;
+}
 
 
 
@@ -285,6 +306,9 @@ a>h3{
         padding: 25px;
         width: 22.5%;
     }
+    .image-container {
+        width: 80%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -303,6 +327,8 @@ a>h3{
     .button-card{
         width: 45%;
     }
+
+
 }
 
 @media (min-width: 992px) {
