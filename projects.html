@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>EmilioHdez | Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Raleway:wght@400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/styles-v2.css"/>
+    <link rel="stylesheet" type="text/css" href="css/hambutton.css"/>
+</head>
+<body>
+
+<main>
+    <div id="nav-bar">
+        <div class="left-side">
+            <a href="#" class="invisible"><img src="imgs/logoE.png" alt=""></a>
+        </div>
+        <div class="right-side">
+            <ul>
+                <li><a href="index-v2.html">intro</a></li>
+                <li><a href="about-me-v2.html">about</a></li>
+                <li><a href="projects.html" class="active">projects</a></li>
+                <li><a href="#">posts & notes</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <button class="invisible hamburger hamburger--spring" onclick="hamButtonToggle(this)">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </div>
+    <section>
+        <div class="content">
+            <h2> some of the projects I have participated in</h2>
+            <div class="container">
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+        crossorigin="anonymous"></script>
+<script>
+    function hamButtonToggle(node) {
+        $(node).toggleClass("is-active");
+        $("#nav-bar>.right-side>ul").toggleClass("active");
+    }
+</script>
+
+</body>
+</html>
