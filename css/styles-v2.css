@@ -371,6 +371,16 @@ div.picture{
         width: 45%;
     }
 
+    .card.project {
+        width: 47.5%;
+    }
+    .card.project:nth-child(2n) {
+        margin-left: 2.5%;
+    }
+    .card.project:nth-child(2n+1) {
+        margin-right: 2.5%;
+    }
+
 
 }
 
