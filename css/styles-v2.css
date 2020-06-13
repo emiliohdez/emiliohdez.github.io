@@ -237,13 +237,57 @@ div.picture{
     border-radius: 15px;
     position: relative;
 }
+.card.project{
+    background-color: #F8F5E6;
+    min-height: 240px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px 25px;
+}
+.card-content > .background-image{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    height: 170px;
+}
+.card-content>.text-content{
+    padding: 0 20px;
+    text-align: left;
+}
+.card-content > .title {
+    font-weight: bold;
+    margin-top: 20px;
+}
+.card-content > .details{
+    font-size: .85em;
+    line-height: calc(.85em *1.618);
+    margin-top: 10px;
+}
+.card-content>.status{
+    position: absolute;
+    right: 0;
+    font-size: .75em;
+    padding: 10px;
+    background: #2ed3c6;
+    border: 5px solid #f8f5e6;
+    color: white;
+    border-radius: 15px;
+    top: 0;
+    font-weight: bold;
+}
+
 .button-card {
     border: 3px solid #2ed3c6;
     margin: 15px calc(10%/4);
     padding: 3em 35px;
     transition: background .5s ease;
     width: 95%;
-
 }
 .button-card:hover {
     background: #2ed3c6;
@@ -253,16 +297,10 @@ div.picture{
 }
 .link-card > a {
     font-size: 1.2em;
-    height: 100%;
-    left: 0;
-    margin-top: calc(2.5em/1.2);
-    position: absolute;
     text-align: center;
     text-decoration: none;
-    top: 0;
-    width: 100%;
 }
-a>h3{
+.card h3{
     font-family: inherit;
 }
 
