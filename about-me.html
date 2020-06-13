@@ -1,71 +1,113 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>About | Emilio Hdez</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif:700|Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    <link rel="stylesheet" type="text/css" href="css/hambutton.css" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>EmilioHdez | About</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Raleway:wght@400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/styles-v2.css"/>
+    <link rel="stylesheet" type="text/css" href="css/hambutton.css"/>
 </head>
-
 <body>
-    <nav class="menu" id="top-menu">
-        <img class="logo" src="imgs/logoE.png" onclick="window.location.href = 'index.html';" />
-        <button class="hamburger hamburger--spring" type="button" onclick="hamButtonToggle(this)">
-            <span class="hamburger-box">
+
+<main>
+    <div id="nav-bar">
+        <div class="left-side">
+            <a href="index.html" class="invisible"><img src="imgs/logoE.png" alt=""></a>
+        </div>
+        <div class="right-side">
+            <ul>
+                <li><a href="index.html">intro</a></li>
+                <li><a href="about-me.html" class="active">about</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="#">posts & notes</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <button class="invisible hamburger hamburger--spring" onclick="hamButtonToggle(this)">
+                <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
-            </span>
-        </button>
-        <ul>
-            <li><a href="index.html">intro</a></li>
-            <li class="current"><a href="about-me.html">about</a></li>
-            <li><a href="projects.html">projects</a></li>
-            <li><a href="blog.html">blog</a></li>
-        </ul>
-    </nav>
-    <div class="banner parallax-window" data-parallax="scroll" data-image-src="imgs/banners/hdez_gto.jpg"></div>
+                </span>
+            </button>
+        </div>
+    </div>
     <section>
-        <h2>A little more about me</h2>
-        <div id="expertise">
-            <p>While I was studying Computer Systems Engineering at Veracruz, I got specialized in "Mobile and Web Development Technologies", so that my first experiences where in that field.</p>
-            <p>At the end of my bachelor studies, I moved to Guanajuato City for working on my thesis project at the Centro de Investigación en Matemáticas (<a href="https://www.cimat.mx/">CIMAT</a>) advised by PhD Rogelio Hasimoto Beltrán and PhD Rafael Rivera López. Honestly, this was one of the best experiences of my life, personally and professionally, because I met amazing people and I learned so much from them.</p>
+        <div class="content">
+            <h2> A little more about me</h2>
+            <p>I'm currently 27 y.o. and I'm from Veracruz, México. I studied <span class="special-text">Computer
+                Systems Engineering</span> at the Instituto Tecnológico de Veracruz (<a href="#">ITVer</a>) with an
+                specialization in "Mobile and Web Development Technologies", so my background is oriented to
+                programming, database management and computer networks.</p>
 
-            <p>My Thesis project was about a platform for tracking the public transport system in real-time, a flexible model that could work for every mexican city and would lead the citizen to use the bus instead a private car. For this, I had to go deeper in stuff like high performance software design and load balancing, patterns, web services, networks, protocols, data transmission and others. I took some programming classes and I was the <span class="special-text">teaching assistant</span> of the "Advanced Programming Topics" class focused on networks programming, protocols and data transmission with C programming language. In general, it was a very enriching stage, I recommend this place.</p>
+            <div class="image-container">
+                <p class="footer">Day of my graduation at the ITVer.</p>
+                <img class="text-related" src="imgs/timeline/itver.jpg"/>
 
-            <img class="text-related" src="imgs/timeline/cimat.jpg"/>
+            </div>
 
-            <p>During my stay at CIMAT, I got the chance to work remotely for the Centro Nacional de Supercómputo (<a href="http://www.cns-ipicyt.mx/">CNS</a>) as a junior software developer, advised by PhD Salvador Ruiz Correa, but in 2017 I moved to San Luis Potosí for working in situ. At this time I was working on a mobile crowdsourcing platform based on a Services Oriented Architecture.</p>
+            <p>At the end of my bachelor studies, I moved to Guanajuato City for working on my thesis project at the
+                Centro de Investigación en Matemáticas (<a href="https://www.cimat.mx/">CIMAT</a>), advised by PhD.
+                Rogelio Hasimoto Beltrán and PhD. Rafael Rivera López. Honestly, this was one of the best experiences of
+                my life, personally and professionally, because I met amazing people and I learned so much from them.</p>
+            <p>My Thesis project was about a platform for tracking the public transport system in real-time, a flexible
+                model that could work for every mexican city and would lead the citizen to use the bus instead a private
+                car. For this, I had to go deeper in stuff like high performance software design and load balancing,
+                patterns, web services, network protocols, data transmission and others. I took some programming classes
+                and I was the <span class="special-text">teaching assistant</span> of the "Advanced Programming Topics"
+                class, focused on networks programming, protocols and data transmission with C programming language. In
+                general, it was a very enriching stage, I <b>really</b> recommend this place.</p>
 
-            <p>Late in 2017, I was assigned to the Youth Innovation Laboratory (<a href="http://youilab.ipicyt.edu.mx/You-i.Lab/">You-i Lab</a>) as the lead web software engineer, an <span class="special-text">interdisciplinary group</span> focused on tech-projects for social good. This is my current job, such a pleasure to collaborate with this awesome team. Here, I have worked on social problems like pollution, air quality, water conservation and public politics based on the citizens opinions and necessities, applying things like data analytics, social engineering and GIS, besides software development of course.</p>
+            <div class="image-container">
+                <p class="footer">Some of my friends at CIMAT (I don't have other picture).</p>
+                <img class="text-related" src="imgs/timeline/cimat.jpg"/>
 
-            <img class="text-related" src="imgs/timeline/youilab.jpg"/>
+            </div>
 
-            <p>Since 2019, I've been working as an <span class="special-text">independent consultant</span> for other companies, like the Instituto Nacional de Antropología e Historia (INAH) and a group called CreadoresEdoMex and I've collaborated with some startups and civil associations like Safety Program and Zynergia, A.C.</p>
+
+            <p>During my stay at CIMAT, I got the chance to work remotely for the Centro Nacional de Supercómputo
+                (<a href="http://www.cns-ipicyt.mx/">CNS</a>) as a junior software developer, advised by PhD. Salvador
+                Ruiz Correa, but in 2017 I moved to San Luis City for working in situ. At this time I was working on a
+                mobile crowdsourcing platform based on a Services Oriented Architecture.</p>
+
+            <p>Late in 2017, I was promoted as the lead web software engineer of the Youth Innovation Laboratory
+                (<a href="http://youilab.ipicyt.edu.mx/You-i.Lab/">You-i Lab</a>), an
+                <span class="special-text">interdisciplinary group</span> focused on tech-projects for social good. This
+                is my current job, such a pleasure to collaborate with this awesome team. Here, I have worked on social
+                problems like pollution, air quality, water conservation and public politics based on the citizens
+                opinions and necessities, applying things like data analytics, social engineering and GIS, besides
+                software development of course.</p>
+
+            <div class="image-container">
+                <p class="footer">My team at the You-i Lab</p>
+                <img class="text-related" src="imgs/timeline/youilab.jpg"/>
+
+            </div>
+
+            <p>Since 2019, I've been working as an <span class="special-text">independent consultant</span> too,
+                collaborating with other for other companies and organizations like the Instituto Nacional de
+                Antropología e Historia (INAH).</p>
+
         </div>
     </section>
     <section>
-        <div id="areas">
-            <h3>Areas of interest</h3>
-            <p>Since I got started in Computer Sciences, I've had big passion for the <span class="special-text">Software Engineering</span> area. We can find there that programming is a good skill, but is not enough to give solution to a complex problem, to build a platform or to work in a team. We need to learn that planning a project and making up the design is the most important part.</p>
-            <p>The <span class="special-text">Machine Learning</span> area is quite new for me, but I've found simply amazing the way in we can teach a machine to execute tasks in a similar way than a person, specially those tasks that are difficult o even impossible for us. So, I'm getting deep into this area.</p>
-            <p>Finally, it's incredible the amount of data available on the net, and even more the things we can learn or discover for different purposes, like social solutions. That's the reason of my interest on <span class="special-text">Data Analysis</span>. The complement of this is the way we can show information to the society in general, in my opinion it's very important to complement our studies with <span class="special-text">Data Visualization</span> skills in order to achieve everyone's understanding and, maybe, empower participation.</p>
-        </div>
-    </section>
-    <section>
-        <div id="hobbies">
-            <h3>Finally... My hobbies</h3>
+        <div class="content">
+            <h2> Finally... My hobbies</h2>
             <p>I'm not a robot!</p>
             <p>Some of my activities are focused on keeping me healthy and to relax my mind and soul. I love <span class="special-text">volunteering</span> for social causes, I truly believe this kind of services help us for being in touch with real life and real necessities, and those are a good way for not loosing our "humanity", I can really say. I really enjoy <span class="special-text">working out</span> because, principaly, it helps me to release stress while staying in shape. And last, but not least, I can share that I'm in love with music, I <span class="special-text">sing</span> in a chorus in the role of Tenor, which is AWESOME!.</p>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/parallax.js"></script>
-    <script type="text/javascript" src="js/dynamics.js"></script>
-</body>
+</main>
 
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+        crossorigin="anonymous"></script>
+<script>
+    function hamButtonToggle(node) {
+        $(node).toggleClass("is-active");
+        $("#nav-bar>.right-side>ul").toggleClass("active");
+    }
+</script>
+
+</body>
 </html>
