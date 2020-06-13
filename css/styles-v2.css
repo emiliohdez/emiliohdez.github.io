@@ -272,21 +272,40 @@ div.picture{
 .card-content > .details{
     font-size: .85em;
     line-height: calc(.85em *1.618);
-    margin-top: 10px;
+    margin: 10px 0 50px;
+
 }
 .card-content>.status{
     position: absolute;
     right: 0;
-    font-size: .75em;
-    padding: 10px;
-    background: #2ed3c6;
+    font-size: .7em;
+    padding: 7px 10px;
+    background: #AFE19F;
     border: 5px solid #f8f5e6;
     color: white;
     border-radius: 15px;
     top: 0;
     font-weight: bold;
 }
-
+.card-content>button{
+    position: absolute;
+    bottom: 15px;
+    width: 70%;
+    margin-left: 15%;
+    height: 40px;
+    font-size: .8em;
+    text-transform: uppercase;
+    background: white;
+    border: 2px solid #2ed3c6;
+    border-radius: 7px;
+    color: #5a5a5a;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.card-content > button:hover{
+    background-color: #2ED3C6;
+    color: white;
+}
 .button-card {
     border: 3px solid #2ed3c6;
     margin: 15px calc(10%/4);
