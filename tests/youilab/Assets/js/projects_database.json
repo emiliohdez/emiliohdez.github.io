@@ -1,0 +1,129 @@
+[
+	{
+		"title": "CDS",
+		"image": "./Assets/img/logos/CDS.png",
+        "description": "Application that provides an immediate self-assessment on the disease of COVID-19.",
+        "period": "2020",
+		"text": "CDS is a mobile application developed by IPICYT in conjunction with the Faculty of Medicine of the UASLP, to support the VIRUS program (Surveillance of Respiratory Infections creating Health Units), which consists of an intervention scheme of health risk to strengthen community capacities to control the spread of SARS-Cov-2 through the early identification of cases.\nIt has the following functionalities: \n• Through a survey, it performs a self-diagnosis to know at the moment if there is a health risk due to the COVID-19 infection. \n• Immediate guidance on what to do if you are at risk. \n• Contact numbers for emergencies and health advice. \n• It allows access to important information for the prevention of the spread and spread of the disease, a world map of COVID-19 cases, as well as information for the care of physical and mental health during this contingency." ,    
+		"url": "Projects/CDS.html"
+	},{
+		"title": "WeNet: The Internet of US",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/WeNet.jpg",
+        "description": "WeNet is funded by the EU H2020 program and supported by reserchers from several countries. IPICYT represents Mexico by hosting WeNet MX.",
+        "period": "2019-2022",
+        "text": "WeNet addresses this gap by providing a diversity-aware, machine-mediated paradigm of social relations. The goal is connecting people who can help each other, and the key is leveraging their diversity. \nThe WeNet platform will be the basis of a series of studies within universities across the world with diverse student populations. The studies will look at how the platform can improve students’ quality of life inside and outside the academic environment. \nWeNet’s innovative paradigm impacts human interactions in general, especially those that may benefit from a collaborative approach (creative industries, medical diagnosis, …). The WeNet consortium will develop a research infrastructure to exploit the project results and strengthen the European innovation ecosystem with a worldwide perspective.",    
+		"url": "Projects/wenet.html"     
+		},{
+		"title": "CoIncidencia Digital",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/sm.jpg",
+        "description": "Exploring youth's social media usage patterns in Mexico. A project funded by the Secretaría de Educación, Ciencia, Tecnología e Innovación de la Ciudad de México.",
+        "period": "2018-2019",
+        "text": "This project considers the use of mobile distributed collaboration techniques, to study the ICT use patterns, of young people between 16 and 21 years of age who in Mexico City (CDMX). The proposal states that the quantitative characterization of these patterns will support the design of public policies aimed at promoting the use of ICT and reducing social inequality that affects significant sectors of the population. The proposal addresses research questions in four areas: (1) general questions, (2) knowledge, (3) skills and (4) practices, all related to the patterns of use of ICT, with emphasis on the use of mobile media and social networks. The project is funded by la Secretaría de Educación Ciencia Tecnología e Innovación de la CDMX." ,    
+		"url": "Projects/coincidencia.html"
+		},{
+		"title": "Ripples",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/intro.jpg",
+        "description": "A mobile crowsourcing platform to empower children and young people.",
+        "period": "2018-2019",
+        "text": "Coming up soon ...",    
+		"url": "Projects/ripples.html"
+		},{
+		"title": "SenSky",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/SenSky.jpg",
+        "description": "Mobile crowsourcing tools to address air pollution issues in Mexican cities. A project sopnsored by INEGI and CONACYT.",
+        "period": "2019-2021",
+		"text": "Coming up soon ..."  ,    
+		"url": "Projects/sensky.html"   
+	},{
+		"title": "¡Tertulias de la Paz!",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/Tertulias.jpg",
+        "description": "A model to document, characterize and intervene the state of children in urban and semiurban environments affected by social marginaization, insecurity and violence.",
+        "period": "2019-2021",
+		"text": "Coming up soon ...",
+		"url": "Projects/tertulias.html"      
+	},{
+		"title": "#yoPorMiCiudad",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/yoPorMiCiudad.jpg",
+        "description": "Mobile crowdsourcing tools to to document urban infrastructure in San Luis Potosí city. A project lead by Agenda Ambiantal (Universidad Autónomo de San Luis Potosi).",
+        "period": "2019",
+		"text": "#yoPorMiCiudad is a initiative led by UASLP's Agenda Ambiental to document the urban infrastructure in San Luis Potosí city through citizen engagement. IPICYT's You-i Lab supports this initiative by providing mobile crowdsourcing tools through the Ripples platform."     ,
+		"url": "Projects/yopormiciudad.html"   
+	},{
+		"title": "SenseCityVity",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/kids_card.jpg",
+        "description": "Mobile sensing, urban awareness, and collective action in México.",
+        "period": "2014-2018",
+		"text": "SenseCityVity is a collaborative project between Idiap Research Institute (PI: Daniel Gatica-Perez) and the Instituto Potosino de Investigación Científica y Tecnológica (IPICYT), supported by EPFL's Cooperation and Development Center (CODEV). Our goal is to engage citizens as factors of social change, through the use of mobile tech tools to improve the understanding of socio-urban problems in communities and cities."     ,
+		"url": "Projects/sensecityvity.html"   
+	},{
+		"title": "UrBis",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/intro2bis.jpg",
+        "description": "A mobile crowdsourcing platform to study socio-urban problems in México (urbis.cns-ipicyt.mx/urbis).",
+        "period": "2016-2018",
+        "text": "UrBis is a crowdsourcing platform developed at IPICYT's You-i Lab to address socio-urban problems in México."     ,
+		"url": "Projects/urbis.html"  
+	},{
+		"title": "SieNi - PCWO",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/sieni_card.jpg",
+        "description": "A mobile crowdsourcing platform to support Water Community Observatories in Colombia.",
+        "period": "2017",
+		"text": "In partnership with SieNi, a Lausanne-based NGO, the Department of Geography of the Universidad Nacional de Colombia has engaged in an initiative to educate Colombian youth to water protection and empower them to protect the resource. Organized in teams led by their school teacher, the youngsters will identify water issues in their water-basin, and then formulate and implement an action-research project. They will have the support of their teachers (duly trained by SieNi), in addition to the scientific community of the Colombian diaspora."     	,
+		"url": "Projects/sieni.html"  
+	},{
+		"title": "Beyond the Street",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/leon.jpg",
+        "description": "Youth perspectives on socio-urban environments through the lens of a mobile crowdsourcing experience.",
+        "period": "2016-2017",
+		"text": "The purpose of this work is to study the socio-urban environment of a mid-sized city in Mexico from the perspective of young people who experience a situation of social marginalization. The study is conducted in the context of a mobile crowdsourcing experiment that addresses the following research questions: 1) How can mobile crowdsourcing methodologies be used to incentivize marginalized youth to document their socio-urban environment by collecting data with a mobile app?  2) What tensions arise between research and practical implementation of a mobile crowd- sourcing experiment carried out with the help of marginalized youth? 3) How is the application used in the field, and what are the features of the collected data with regard to youth’s outlook on their socio-urban environment? 4) How useful is the information distilled from these data to support the development of public policies that address social marginalization issues?" ,
+		"url": "Projects/beyondthestreet.html"      	
+	},{
+		"title": "Mi Casa es su Casa",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/mcsc.jpg",
+        "description": "Understanding peer accommodation in developed and developing countries.",
+        "period": "2016-2017",
+		"text": "The sharing economy is redefining circulation --of people, goods, and resources. In particular, shared accommodation services through which peers can post, find, and book accommodation made available by others, are used by people worldwide. Despite this success, relatively little academic work has done to understand practices and perceptions of peer accommodation. Our project aims to understand how peer accommodation services are perceived and used in developed and developing countries. We consider Switzerland and Mexico as case studies. Putting emphasis on both psychological and computational aspects, the project spans field work, lab experiments, crowdsourcing, and data mining to study peer accommodation in the two target countries. Airbnb sites in México are shown in the heat map on the left. The project is supported by the EPFL-UNIL Program on Cross-Disciplinary Research on Science and Society (CROSS). Please visit Idiap's website and our community Facebook page to know more about our project."     ,
+		"url": "Projects/mcsc.html"
+		},{
+		"title": "Environmental Restoration Perception",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/er.jpg",
+        "description": "Identification and perceptual evaluation of restorative environments.",
+        "period": "2017-2018",
+		"text": "The goal of this study is to identify restorative environments with in León City, Guanajuato. Once the restorative potential of these sites is identified, the perception of psychological restoration is evaluated through a momentary ecological assessment that will be conducted through mobile crowsourcing means. The project is lead by Dr. Joel Martínez Soto who works at the Department of Psychology of the University of Guanajuato."     	,
+		"url": "Projects/er.html"
+	},{
+		"title": "N-Prende",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/m-prende.jpg",
+        "description": "Empowering rural youth for social change.",
+        "period": "2018",
+		"text": "A prroject to empower rural youth."  ,
+		"url": "Projects/n-prende.html"   	
+	},{
+		"title": "ICT's Agora",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/signos5.jpg",
+        "description": "A collaboration project with Ágora de Cultura Ambiantal AC to empower youth throug the use of ICTs.",
+        "period": "2015-2018",
+		"text": "Coming up soon ..."   ,
+		"url": "Projects/ictagora.html"    	
+	},{
+		"title": "Let's do it",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/angel.jpg",
+        "description": "A mobile crowdsourcing platform to document, characterize and address the employment and security needs of the inhabitants of the Cuauhtémoc City Hall.",
+        "period": "2019",
+		"text": "A prroject to empower rural youth." ,
+		"url": "Projects/letsdoit.html"       	
+	},{
+		"title": "Diagnosing VAW in Guanajuato",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/VAW.jpg",
+        "description": "Diagnosing violence against women in Guanajuato state using participatory sensing techniques.",
+        "period": "2016",
+		"text": "Coming up soon ..."  ,
+		"url": "Projects/VAW.html"       	
+	},{
+		"title": "Shaping Archeology",
+		"image": "http://youilab.ipicyt.edu.mx/You-i.Lab/img/more/SA4.jpg",
+        "description": "Understanding México's cultural heritage through data science.",
+        "period": "2014-2018",
+		"text": "Coming up soon ..."   ,
+		"url": "Projects/SA4.html"            	
+	}
+]
