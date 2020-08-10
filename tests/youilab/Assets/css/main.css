@@ -64,6 +64,7 @@ nav a
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
+    font-size: 14px;
 }
 
 nav a:hover 
@@ -118,8 +119,8 @@ li {
 }
 
 .top-bar .right {
-    float: right;
-    margin-right: 20px;
+    right: 30%;
+    position: absolute;
 }
 
 .nav-links {
@@ -127,6 +128,15 @@ li {
     right: 0%;
     list-style: none;
     margin: 0;
+}
+.logos{
+    position: absolute;
+}
+#cns{
+    right: 0;
+}
+#ipicyt{
+    right: 95px;
 }
 
 .hamburger {
@@ -318,7 +328,7 @@ li {
 
 .section-1-text{
     margin-top: -0px;
-    padding: 1vw 8vw;
+    padding: 1vw 8vw 3vw 8vw;
     max-height: 100%;
     text-align: center;
 }
@@ -456,6 +466,10 @@ li {
     text-decoration: none;
     border: none;
     cursor: pointer;
+    font-size: 1em;
+}
+.btn:hover{
+    opacity: .8;
 }
 .contenedor .section-3 .btn{
     background: var(--rojo);
@@ -675,6 +689,10 @@ li {
       margin: 0 auto;
       padding: 50px 0 30px 0;      
   }
+
+  .projects .section-1 p{
+      padding: 20px 8vw;
+  }
   
   .projects .search-container button {
     padding: 6px 10px;
@@ -695,6 +713,7 @@ li {
         min-height: auto;
         width: 100%;
         overflow: hidden;
+        padding: 5px;
     }
     .projects .item1{
         width: 80%;
@@ -704,6 +723,7 @@ li {
         padding: 0px 5%;
         height:350px;
         margin-bottom: 50px;
+        position: relative;
         
     }
     .projects .section-2 .item1 div {
@@ -713,6 +733,8 @@ li {
     }
     .projects .section-2 .item1 .contImg {
         height: 40%;
+        background-position-x: 40%;
+        background-size: cover;
         
     }
     .projects .section-2 .item1 img{
@@ -736,6 +758,7 @@ li {
         bottom: 1;
         left: 25%;
         right: 25%;
+        bottom: 0;
     }
 
 /***********************************
@@ -783,15 +806,17 @@ li {
         padding: 20px 20px;
         color: var(--azul);
         font-weight: bold;
-        font-size: .8rem;
-        height: 40%;
-        line-height: 20px;
+        font-size: 1em;
+        line-height: calc(1em*1.618);
 
     }
     .publications .section-2 .item1 p{
         color: var(--rojo) ;
-        padding:0 10px 20px 10px;
-        height: 150px;
+        padding: 0 10px 38% 10px;
+        line-height: calc(12px*1.618);
+    }
+    .publications .item1{
+        height:auto;    
     }
     
 
@@ -846,7 +871,7 @@ li {
   }
   
   .contact input[type=submit]:hover {
-    border: 1px black;
+    opacity: .8;
     
   }
   .contact .section-1 .map{
@@ -915,7 +940,7 @@ footer a {
 ** Media Queries
 ***********************************/
 
-@media only screen and (max-width: 769px) { /* Screen Responsiveness */
+@media only screen and (max-width: 900px) { /* Screen Responsiveness */
 
     nav 
     {
@@ -1004,13 +1029,16 @@ footer a {
 
     .hamburger 
     {
-        position: absolute;
+        position: fixed;
         cursor: pointer;
         right: 5%;
         top: 50%;
         transform: translate(-5%, -50%);
         z-index: 2;
         display: inline-block;
+    }
+    .logos {
+        display: none;
     }
 }
 
@@ -1026,8 +1054,9 @@ footer a {
         font-size: 2rem;
     }
     h3{
-        font-size: 1.2rem;
+        font-size: 2em;
         color: var(--rojo);
+        font-weight: bold;
     }
     .home{
         height: 650px;
@@ -1056,10 +1085,6 @@ footer a {
         bottom: 0;
     }
     
-    .contenedor .section-1
-    {
-        margin-top: -50px;
-    }
     .section-1 .bg-image
     {
         margin-top: 0;
@@ -1272,7 +1297,7 @@ footer a {
         margin: 0 auto;
         min-height: auto;
         margin-bottom: 5%;
-        padding: 0 20px;
+        padding: 20px;
     }
     .projects .section-2 .item1{
         width: 100%;
@@ -1300,6 +1325,7 @@ footer a {
 
     .projects .section-2 .item1 p{
         padding: 2% 10% 2% 10%;
+        font-size: 16px;
     }
     .projects .section-2 .item1 .contImg {
         height: 100%;
@@ -1368,17 +1394,18 @@ footer a {
         height: 400px;
         width: 30%;
         float: left;
-        margin-left: 20px;
+        margin-left: 3%;
         margin-bottom: 20px;
         padding: 0;
         
     }
     .publications .section-2 .item1 p{
-        height: 40%;
+        font-size: 12px;
+        line-height: calc(12px *1.618);
     }
     .publications .section-2 .item1 h1 {
-        line-height: 25px;
-        height: 40%;
+        line-height: calc(1em*1.618);
+        font-size: 1em;
     }
   
      /***********************************
@@ -1492,6 +1519,18 @@ footer a {
         width: 50px;
     }
 }
+@media only screen and (min-width: 568px) and (max-width: 1200px) {
+    .publications .section-2 .item1 {
+        width: 46%;  
+    }
+    .publications .section-2 .item1 h1 {
+        line-height: calc(.8em*1.618);
+        font-size: .8em;
+    }
+    .publications .section-2 .item1 p {
+        line-height: 20px;
+    }
+}
 
 @media only screen and (min-width: 568px) and (max-width: 828px) {
     .home-text {
@@ -1505,6 +1544,7 @@ footer a {
 
     .about .section-1 .item1, .about .section-1 .item2 {
         margin-top: 0;
+        width: 100%;
     }
     .about .home {
         height: 650px;
@@ -1513,18 +1553,27 @@ footer a {
         height: 90px;
     }
     .projects .section-2 .item1 .content h1 {
-        font-size: 1.5rem;
+        font-size: 1.5em;
+        line-height: calc(1.5rem*1.618);
+        padding-top: 10px;
     }
-    .publications .section-2 .item1 {
-        width: 46%;  
+    .projects .section-2 .item1{
+        width: 100%;
+        padding: 0px 5%;
+        height:80vw; 
     }
-    .publications .section-2 .item1 h1 {
-        line-height: 20px;
-        height: 30%;
+    .projects .section-2 .item1 div {
+        width: 100%;
+        overflow: hidden;
+        height: 60%;
     }
-    .publications .section-2 .item1 p {
-        line-height: 20px;
-        height: 45%;
+    .projects .section-2 .item1 .contImg {
+        height: 40%;
+        background-position-x: 40%;
+        background-size: cover;
+        
     }
-    
+    .projects .section-2 .item1 .content {
+        width: 100%;
+    }
 }    
